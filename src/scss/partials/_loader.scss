@@ -1,0 +1,112 @@
+.loader-body {
+    background-color: $color-background;
+    color: $color-letter-loading;
+    min-height: 100vh;
+    @include loader-display;
+
+    .loading {
+        @include loader-display;
+        height: 40%;
+        margin-top: 20px;
+
+        h1 {
+            text-align: center;
+            font-family: $font-family-loading;
+            font-weight: 100;
+            letter-spacing: $letter-spacing;
+            font-size: $font-size;
+            position: relative;
+            top: 2em;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: maquina-escribir 2s steps(10) infinite alternate;
+        }
+    }
+}
+
+@keyframes maquina-escribir {
+    0% {
+        width: 0%;
+    }
+
+    30% {
+        width: 30%;
+    }
+
+    60% {
+        width: 60%;
+    }
+
+    90% {
+        width: 90%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.contenedor {
+    width: $contenedor-width;
+    height: $contenedor-height;
+
+    .cubo {
+        height: $square-height;
+        transform-style: preserve-3d;
+        animation: rotate 10s linear infinite;
+
+        span {
+            position: absolute;
+            width: $span-width;
+            height: $span-height;
+            border: $span-border;
+            box-shadow: $span-box-shadow;
+            border-radius: $span-border-radius;
+            margin-bottom: 5px;
+
+            &:nth-child(1) {
+                @include transformTranslate(90deg, 10em);
+            }
+
+            &:nth-child(2) {
+                @include transformTranslate(90deg, -16em);
+            }
+
+            &:nth-child(3) {
+                @include transformTranslate(90deg, -25em);
+            }
+
+            &:nth-child(4) {
+                @include transformTranslate(90deg, 25em);
+            }
+
+            &:nth-child(5) {
+                @include transformZ(-2em);
+            }
+
+            &:nth-child(6) {
+                @include transformZ (2em);
+            }
+        }
+    }
+}
+
+@keyframes rotate {
+    0% {
+        @include transform(10deg);
+    }
+
+    50% {
+        @include transform(360deg);
+    }
+
+    100% {
+        @include transform(0deg);
+    }
+}

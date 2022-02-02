@@ -1,0 +1,29 @@
+@mixin loader-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin transformTranslate ($deg, $em) {
+    transform: rotateY($deg) translateZ($em);
+    -ms-transform: rotateY($deg) translateZ($em);
+    -webkit-transform: rotateY($deg) translateZ($em);
+    -o-transform: rotateY($deg) translateZ($em);
+    -moz-transform: rotateY($deg) translateZ($em);
+}
+
+@mixin transform ($deg) {
+    transform: rotateY($deg) rotateX($deg);
+    -ms-transform: rotateY($deg) rotateX($deg);
+    -webkit-transform: rotateY($deg) rotateX($deg);
+    -o-transform: rotateY($deg) rotateX($deg);
+    -moz-transform: rotateY($deg) rotateX($deg);
+}
+
+@mixin transformZ($em) {
+    transform: translateZ($em);
+    -ms-transform: translateZ($em);
+    -webkit-transform: translateZ($em);
+    -o-transform: translateZ($em);
+    -moz-transform: translateZ($em);
+}
