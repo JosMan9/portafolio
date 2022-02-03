@@ -1,24 +1,42 @@
-/* Loader variables */
+/*
+  *     Loader variables
+  */
+/*
+*  Menu variables
+*/
+/*
+ * ! Loader
+*/
+/*
+* Menu mixins
+*/
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
 /* line 1, src/scss/partials/_loader.scss */
 .loader-body {
+  position: fixed;
   background-color: #000000;
   color: #ffffff;
   min-height: 100vh;
+  width: 100vw;
+  z-index: 10;
+  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  clip-path: circle(141.2% at 100% 0);
+  transition: clip-path 2s ease-in-out;
 }
 
-/* line 7, src/scss/partials/_loader.scss */
+/* line 13, src/scss/partials/_loader.scss */
 .loader-body .loading {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40%;
+  height: 10%;
   margin-top: 20px;
 }
 
-/* line 12, src/scss/partials/_loader.scss */
+/* line 18, src/scss/partials/_loader.scss */
 .loader-body .loading h1 {
   text-align: center;
   font-family: "Times New Roman", Times, serif;
@@ -26,9 +44,9 @@
   letter-spacing: 5px;
   font-size: 20px;
   position: relative;
-  top: 2em;
+  top: 5em;
   overflow: hidden;
-  white-space: nowrap;
+  white-space: pre-line;
   animation: maquina-escribir 2s steps(10) infinite alternate;
 }
 
@@ -50,26 +68,14 @@
   }
 }
 
-@keyframes cursor {
-  50% {
-    border-color: transparent;
-  }
-}
-
-/* line 55, src/scss/partials/_loader.scss */
-.contenedor {
-  width: 20%;
-  height: 20%;
-}
-
-/* line 59, src/scss/partials/_loader.scss */
+/* line 56, src/scss/partials/_loader.scss */
 .contenedor .cubo {
   height: 60%;
   transform-style: preserve-3d;
   animation: rotate 10s linear infinite;
 }
 
-/* line 64, src/scss/partials/_loader.scss */
+/* line 61, src/scss/partials/_loader.scss */
 .contenedor .cubo span {
   position: absolute;
   width: 4rem;
@@ -80,67 +86,67 @@
   margin-bottom: 5px;
 }
 
-/* line 73, src/scss/partials/_loader.scss */
+/* line 70, src/scss/partials/_loader.scss */
 .contenedor .cubo span:nth-child(1) {
   transform: rotateY(90deg) translateZ(10em);
-  -ms-transform: rotateY(90deg) translateZ(10em);
-  -webkit-transform: rotateY(90deg) translateZ(10em);
-  -o-transform: rotateY(90deg) translateZ(10em);
   -moz-transform: rotateY(90deg) translateZ(10em);
+  -webkit-transform: rotateY(90deg) translateZ(10em);
+  mstransform: rotateY(90deg) translateZ(10em);
+  -o-transform: rotateY(90deg) translateZ(10em);
 }
 
-/* line 77, src/scss/partials/_loader.scss */
+/* line 74, src/scss/partials/_loader.scss */
 .contenedor .cubo span:nth-child(2) {
   transform: rotateY(90deg) translateZ(-16em);
-  -ms-transform: rotateY(90deg) translateZ(-16em);
-  -webkit-transform: rotateY(90deg) translateZ(-16em);
-  -o-transform: rotateY(90deg) translateZ(-16em);
   -moz-transform: rotateY(90deg) translateZ(-16em);
+  -webkit-transform: rotateY(90deg) translateZ(-16em);
+  mstransform: rotateY(90deg) translateZ(-16em);
+  -o-transform: rotateY(90deg) translateZ(-16em);
 }
 
-/* line 81, src/scss/partials/_loader.scss */
+/* line 78, src/scss/partials/_loader.scss */
 .contenedor .cubo span:nth-child(3) {
   transform: rotateY(90deg) translateZ(-25em);
-  -ms-transform: rotateY(90deg) translateZ(-25em);
-  -webkit-transform: rotateY(90deg) translateZ(-25em);
-  -o-transform: rotateY(90deg) translateZ(-25em);
   -moz-transform: rotateY(90deg) translateZ(-25em);
+  -webkit-transform: rotateY(90deg) translateZ(-25em);
+  mstransform: rotateY(90deg) translateZ(-25em);
+  -o-transform: rotateY(90deg) translateZ(-25em);
 }
 
-/* line 85, src/scss/partials/_loader.scss */
+/* line 82, src/scss/partials/_loader.scss */
 .contenedor .cubo span:nth-child(4) {
   transform: rotateY(90deg) translateZ(25em);
-  -ms-transform: rotateY(90deg) translateZ(25em);
-  -webkit-transform: rotateY(90deg) translateZ(25em);
-  -o-transform: rotateY(90deg) translateZ(25em);
   -moz-transform: rotateY(90deg) translateZ(25em);
+  -webkit-transform: rotateY(90deg) translateZ(25em);
+  mstransform: rotateY(90deg) translateZ(25em);
+  -o-transform: rotateY(90deg) translateZ(25em);
 }
 
-/* line 89, src/scss/partials/_loader.scss */
+/* line 86, src/scss/partials/_loader.scss */
 .contenedor .cubo span:nth-child(5) {
-  transform: translateZ(-2em);
-  -ms-transform: translateZ(-2em);
-  -webkit-transform: translateZ(-2em);
-  -o-transform: translateZ(-2em);
-  -moz-transform: translateZ(-2em);
+  transform: rotateY(90deg) translateZ(-2em);
+  -moz-transform: rotateY(90deg) translateZ(-2em);
+  -webkit-transform: rotateY(90deg) translateZ(-2em);
+  mstransform: rotateY(90deg) translateZ(-2em);
+  -o-transform: rotateY(90deg) translateZ(-2em);
 }
 
-/* line 93, src/scss/partials/_loader.scss */
+/* line 90, src/scss/partials/_loader.scss */
 .contenedor .cubo span:nth-child(6) {
-  transform: translateZ(2em);
-  -ms-transform: translateZ(2em);
-  -webkit-transform: translateZ(2em);
-  -o-transform: translateZ(2em);
-  -moz-transform: translateZ(2em);
+  transform: rotateY(90deg) translateZ(2em);
+  -moz-transform: rotateY(90deg) translateZ(2em);
+  -webkit-transform: rotateY(90deg) translateZ(2em);
+  mstransform: rotateY(90deg) translateZ(2em);
+  -o-transform: rotateY(90deg) translateZ(2em);
 }
 
 @keyframes rotate {
   0% {
-    transform: rotateY(10deg) rotateX(10deg);
-    -ms-transform: rotateY(10deg) rotateX(10deg);
-    -webkit-transform: rotateY(10deg) rotateX(10deg);
-    -o-transform: rotateY(10deg) rotateX(10deg);
-    -moz-transform: rotateY(10deg) rotateX(10deg);
+    transform: rotateY(0deg) rotateX(0deg);
+    -ms-transform: rotateY(0deg) rotateX(0deg);
+    -webkit-transform: rotateY(0deg) rotateX(0deg);
+    -o-transform: rotateY(0deg) rotateX(0deg);
+    -moz-transform: rotateY(0deg) rotateX(0deg);
   }
   50% {
     transform: rotateY(360deg) rotateX(360deg);
@@ -158,8 +164,145 @@
   }
 }
 
-/* line 6, src/scss/style.scss */
+/* line 111, src/scss/partials/_loader.scss */
+.loader2 {
+  clip-path: circle(0% at 100% 0);
+}
+
+/* line 1, src/scss/partials/_menu.scss */
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/dist/img/fondo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* line 10, src/scss/partials/_menu.scss */
+header nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 18, src/scss/partials/_menu.scss */
+header nav #checkbox:checked,
+header nav #checkbox {
+  display: none;
+}
+
+/* line 23, src/scss/partials/_menu.scss */
+header nav #checkbox:checked ~ .menu {
+  height: 100vh;
+}
+
+/* line 27, src/scss/partials/_menu.scss */
+header nav #checkbox:checked ~ .menu li {
+  display: block;
+}
+
+/* line 32, src/scss/partials/_menu.scss */
+header nav .bar-btn {
+  font-size: 25px;
+  color: #ffffff;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+/* line 39, src/scss/partials/_menu.scss */
+header nav .menu {
+  position: fixed;
+  width: 100%;
+  height: 0vh;
+  top: 100px;
+  background: rgba(0, 0, 0, 0.84);
+  text-align: center;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  mstransition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+/* line 48, src/scss/partials/_menu.scss */
+header nav .menu li {
+  display: none;
+  line-height: 20px;
+  margin: 10px 0;
+  padding-bottom: 20px;
+  transition: all 0.5s;
+}
+
+/* line 56, src/scss/partials/_menu.scss */
+header nav .menu li a {
+  color: #7D68D5;
+  margin-bottom: 10px;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* line 64, src/scss/partials/_menu.scss */
+header nav .menu li a:hover {
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+/* line 69, src/scss/partials/_menu.scss */
+header nav .menu li .active {
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+@media (min-width: 810px) {
+  /* line 78, src/scss/partials/_menu.scss */
+  nav {
+    height: 100px !important;
+  }
+  /* line 81, src/scss/partials/_menu.scss */
+  nav .bar-btn {
+    display: none;
+  }
+  /* line 85, src/scss/partials/_menu.scss */
+  nav .menu {
+    position: relative !important;
+    height: 100px !important;
+    top: 0 !important;
+    background: none !important;
+    transition: none !important;
+    text-align: right !important;
+    margin-right: 50px !important;
+  }
+  /* line 94, src/scss/partials/_menu.scss */
+  nav .menu li {
+    display: inline-block !important;
+    line-height: 100px !important;
+    margin: 0 20px !important;
+    transition: none !important;
+  }
+  /* line 100, src/scss/partials/_menu.scss */
+  nav .menu li a {
+    font-size: 20px !important;
+  }
+  /* line 103, src/scss/partials/_menu.scss */
+  nav .menu li a span {
+    margin-left: 10px;
+  }
+}
+
+/* line 9, src/scss/style.scss */
 * {
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
+}
+
+/* line 15, src/scss/style.scss */
+.cuadrado {
+  border: 3px solid red;
+  margin-top: 10px;
 }

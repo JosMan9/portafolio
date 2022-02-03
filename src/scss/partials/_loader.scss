@@ -1,12 +1,18 @@
 .loader-body {
+    position: fixed;
     background-color: $color-background;
     color: $color-letter-loading;
     min-height: 100vh;
+    width: 100vw;
+    z-index: 10;
+    top: 0;
     @include loader-display;
+    clip-path: circle(141.2% at 100% 0);
+    transition: clip-path 2s ease-in-out;
 
     .loading {
         @include loader-display;
-        height: 40%;
+        height: 10%;
         margin-top: 20px;
 
         h1 {
@@ -16,9 +22,9 @@
             letter-spacing: $letter-spacing;
             font-size: $font-size;
             position: relative;
-            top: 2em;
+            top: 5em;
             overflow: hidden;
-            white-space: nowrap;
+            white-space: pre-line;
             animation: maquina-escribir 2s steps(10) infinite alternate;
         }
     }
@@ -46,16 +52,7 @@
     }
 }
 
-@keyframes cursor {
-    50% {
-        border-color: transparent;
-    }
-}
-
 .contenedor {
-    width: $contenedor-width;
-    height: $contenedor-height;
-
     .cubo {
         height: $square-height;
         transform-style: preserve-3d;
@@ -87,11 +84,11 @@
             }
 
             &:nth-child(5) {
-                @include transformZ(-2em);
+                @include transformTranslate(90deg, -2em);
             }
 
             &:nth-child(6) {
-                @include transformZ (2em);
+                @include transformTranslate(90deg, 2em);
             }
         }
     }
@@ -99,7 +96,7 @@
 
 @keyframes rotate {
     0% {
-        @include transform(10deg);
+        @include transform(0deg);
     }
 
     50% {
@@ -109,4 +106,8 @@
     100% {
         @include transform(0deg);
     }
+}
+
+.loader2 {
+    clip-path: circle(0% at 100% 0);
 }

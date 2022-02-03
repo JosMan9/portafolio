@@ -1,0 +1,113 @@
+header {
+
+    width: $header-width;
+    height: $header-height;
+    background-image: url(/dist/img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    nav {
+        height: $nav-height-menu;
+        width: $nav-width-menu;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        #checkbox:checked,
+        #checkbox {
+            display: none;
+        }
+
+        #checkbox:checked~.menu {
+            height: 100vh;
+        }
+
+        #checkbox:checked~.menu li {
+            display: block;
+        }
+
+
+        .bar-btn {
+            font-size: $bar-btn-font-size;
+            color: $color-btn-bar-nav;
+            margin-left: $margin-left-btn-bar-nav;
+            cursor: pointer;
+        }
+
+        .menu {
+            position: fixed;
+            width: $menu-width;
+            height: $menu-height;
+            top: $menu-top;
+            background: rgba(0, 0, 0, 0.84);
+            text-align: center;
+            @include transitionMenu(0.5s);
+
+            li {
+                display: none;
+                line-height: $line-height-li;
+                margin: $margin-li;
+                padding-bottom: 20px;
+                transition: all 0.5s;
+
+
+                a {
+                    color: $color-a;
+                    margin-bottom: 10px;
+                    font-size: $font-size-a;
+                    text-transform: uppercase;
+                    font-weight: $font-weight-a;
+                    text-decoration: none;
+
+                    &:hover {
+                        @include color-active;
+                    }
+                }
+
+                .active {
+                    @include color-active;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 810px) {
+    nav {
+        height: 100px !important;
+
+        .bar-btn {
+            display: none;
+        }
+
+        .menu {
+            position: relative !important;
+            height: 100px !important;
+            top: 0 !important;
+            background: none !important;
+            transition: none !important;
+            text-align: right !important;
+            margin-right: 50px !important;
+
+            li {
+                display: inline-block !important;
+                line-height: 100px !important;
+                margin: 0 20px !important;
+                transition: none !important;
+
+                a {
+                    font-size: 20px !important;
+
+                    span {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+}

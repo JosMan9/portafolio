@@ -1,3 +1,8 @@
+
+/*
+ * ! Loader
+*/
+
 @mixin loader-display {
     display: flex;
     justify-content: center;
@@ -5,25 +10,34 @@
 }
 
 @mixin transformTranslate ($deg, $em) {
-    transform: rotateY($deg) translateZ($em);
-    -ms-transform: rotateY($deg) translateZ($em);
-    -webkit-transform: rotateY($deg) translateZ($em);
-    -o-transform: rotateY($deg) translateZ($em);
-    -moz-transform: rotateY($deg) translateZ($em);
+    @each $var in ('', '-moz-', '-webkit-', 'ms', '-o-') {
+        #{$var}transform: rotateY($deg) translateZ($em);
+    }
 }
 
 @mixin transform ($deg) {
-    transform: rotateY($deg) rotateX($deg);
-    -ms-transform: rotateY($deg) rotateX($deg);
-    -webkit-transform: rotateY($deg) rotateX($deg);
-    -o-transform: rotateY($deg) rotateX($deg);
-    -moz-transform: rotateY($deg) rotateX($deg);
+    @each $var in ('', '-ms-', '-webkit-', '-o-', '-moz-') {
+        #{$var}transform: rotateY($deg) rotateX($deg);
+    }
 }
 
 @mixin transformZ($em) {
-    transform: translateZ($em);
-    -ms-transform: translateZ($em);
-    -webkit-transform: translateZ($em);
-    -o-transform: translateZ($em);
-    -moz-transform: translateZ($em);
+    @each $var in ('', '-ms', '-webkit-', '-o-', '-moz-') {
+        #{$var}transform: translateZ($em);
+    }
+}
+
+/*
+* Menu mixins
+*/
+
+@mixin color-active {
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+@mixin transitionMenu ($seg){
+    @each $var in ('', '-moz-', '-webkit-', 'ms', '-o-') {
+       #{$var}transition:  $seg;
+    }
 }

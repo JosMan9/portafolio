@@ -1,5 +1,8 @@
 
-/* Loader variables */
+/*
+  *     Loader variables
+  */
+
 $color-background: #000000;
 $color-letter-loading: #ffffff;
 $color-shadow-square: rgba(83,44,192,0.603);
@@ -19,3 +22,27 @@ $span-height: 4rem;
 $span-border: 2px solid $color-border-square;
 $span-box-shadow: inset 0px 0px 15px 5px $color-shadow-square;
 $span-border-radius: 4px;
+
+
+/*
+*  Menu variables
+*/
+$header-width: 100%;
+$header-height:  100vh;
+$nav-width-menu: 100%;
+
+$nav-height-menu: 100px;
+$bar-btn-font-size: 25px;
+$color-btn-bar-nav: #ffffff;
+
+$margin-left-btn-bar-nav: 20px;
+$menu-width: 100%;
+$menu-height: 0vh;
+
+$menu-top: 100px;
+$line-height-li: 20px;
+$margin-li: 10px 0;
+
+$color-a: #7D68D5;
+$font-size-a: 30px;
+$font-weight-a: 600;
