@@ -1,11 +1,16 @@
-header {
-
-    width: $header-width;
-    height: $header-height;
+body {
     background-image: url(/dist/img/fondo.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    backdrop-filter: blur(10px);
+    height: 150vh;
+}
+
+header {
+    width: $header-width;
+    height: $header-height;
+
 
     nav {
         height: $nav-height-menu;
@@ -13,6 +18,7 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
 
 
         #checkbox:checked,
@@ -24,7 +30,7 @@ header {
             height: 100vh;
         }
 
-        #checkbox:checked~.menu li {
+        #checkbox:checked~.menu li  {
             display: block;
         }
 
@@ -41,7 +47,7 @@ header {
             width: $menu-width;
             height: $menu-height;
             top: $menu-top;
-            background: rgba(0, 0, 0, 0.84);
+            background-color: lighten($background-color-menu, 10%);
             text-align: center;
             @include transitionMenu(0.5s);
 
@@ -70,11 +76,37 @@ header {
                     @include color-active;
                 }
             }
+
+            i {
+                color: white;
+                padding: 5px;
+                cursor: pointer;
+
+                &:hover {
+                     @include color-active;
+                }
+            }
+
+            .fa-facebook:hover {
+                color: #0147b7;
+            }
+
+            .fa-whatsapp:hover {
+                color: #39D845;
+            }
+
+            .fa-github:hover {
+                color: #545554;
+            }
+
+            .fa-linkedin:hover {
+                color: #0147b7;
+            }
         }
     }
 }
 
-@media (min-width: 810px) {
+@media (min-width: 1000px) {
     nav {
         height: 100px !important;
 
@@ -99,6 +131,10 @@ header {
 
                 a {
                     font-size: 20px !important;
+
+                    &:hover {
+                        @include color-active;
+                    }
 
                     span {
                         margin-left: 10px;

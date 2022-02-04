@@ -32,12 +32,22 @@
 */
 
 @mixin color-active {
-    color: #ffffff;
+    color: #438C56;
     transition: 0.3s;
 }
 
 @mixin transitionMenu ($seg){
     @each $var in ('', '-moz-', '-webkit-', 'ms', '-o-') {
        #{$var}transition:  $seg;
+    }
+}
+
+/*
+*   Home mixins
+*/
+
+@mixin calc ($property, $expression){
+    @each $var in ('', '-moz-', '-webkit-') {
+        #{$property}: #{$var}calc(#{$expression});
     }
 }

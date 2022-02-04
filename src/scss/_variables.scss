@@ -1,7 +1,7 @@
 
 /*
-  *     Loader variables
-  */
+*     Loader variables
+*/
 
 $color-background: #000000;
 $color-letter-loading: #ffffff;
@@ -27,6 +27,7 @@ $span-border-radius: 4px;
 /*
 *  Menu variables
 */
+
 $header-width: 100%;
 $header-height:  100vh;
 $nav-width-menu: 100%;
@@ -43,6 +44,43 @@ $menu-top: 100px;
 $line-height-li: 20px;
 $margin-li: 10px 0;
 
-$color-a: #7D68D5;
+$color-a: #ffffff;
 $font-size-a: 30px;
 $font-weight-a: 600;
+
+$background-color-menu: rgba(41, 85, 222, 0.6);
+
+/*
+*       Home variables
+*/
+
+$main-width: 90%;
+$main-height: 100%;
+$main-background-color: rgba(#ffffff, 0.5);
+
+$main-border: 1px solid white;
+$main-box-shadow: 0 3px 10px white;
+$item-photo-width: 45%;
+
+$photo-width: 70%;
+$photo-height: 70%;
+$photo-border-radius: 50%;
+
+$photo-left: 15%;
+$photo-top: 25%;
+$item-description-width: 45%;
+
+$separation-background-color: darken(black, 5%);
+$h1-description-font-size: 300%;
+$h1-description-font-weight: 800;
+
+$h1-description-padding: 15px;
+$p-description-margin-top: 20px;
+$p-description-font-size: 200%;
+
+$p-description-padding: 10px;
+$img-complement-width: 50%;
+$img-complement-height: 50%;
+
+$img-complement-margin: 15px auto;
+$img-complement-box-shadow: 0 3px 10px blue;
