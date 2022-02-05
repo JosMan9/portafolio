@@ -5,12 +5,14 @@ main {
     border: $main-border;
     margin: auto;
     box-shadow: $main-box-shadow;
+    border-radius: 10%;
 
     .item {
         padding: 1%;
         margin-top: 1em;
         height: 92%;
         margin-bottom: 1em;
+        
     }
 
     #item-photo {
@@ -28,6 +30,7 @@ main {
             top: $photo-top;
 
         }
+        
     }
 
     #item-description {
@@ -40,9 +43,10 @@ main {
             content: '';
             position: absolute;
             width: 1px;
-            height: 92%;
+            height: 42%;
             padding-right: 1px;
             @include calc(left, '50% - 1px');
+            @include calc(top, '20% - 1px');
             background-color: $separation-background-color
         }
 
@@ -69,7 +73,12 @@ main {
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
+
+    p {
+        font-size: 150% !important;
+    }
+    
     .img {
         display: none !important;
         height: 10px !important;
