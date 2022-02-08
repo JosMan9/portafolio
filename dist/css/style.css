@@ -8,6 +8,12 @@
 *       Home variables
 */
 /*
+ *  About variables   
+*/
+/*
+ * Skills variables
+*/
+/*
  * ! Loader
 */
 /*
@@ -177,10 +183,10 @@
 
 /* line 1, src/scss/partials/_menu.scss */
 body {
-  background-image: url(/dist/img/fondo.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  /*background-image: url(/dist/img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;*/
   backdrop-filter: blur(10px);
   height: 150vh;
 }
@@ -439,51 +445,33 @@ main #item-description .img {
   }
 }
 
-/* line 10, src/scss/style.scss */
-html {
-  overflow-x: hidden;
-}
-
-/* line 15, src/scss/style.scss */
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-/* line 21, src/scss/style.scss */
-.cuadrado {
-  border: 3px solid red;
-  margin-top: 10px;
-}
-
-/* line 26, src/scss/style.scss */
+/* line 1, src/scss/partials/_about.scss */
 .about-section {
   width: 100%;
   height: 50%;
   margin-top: 100px;
-  background: url(/dist/img/fondo2.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  /*background: url(/dist/img/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;*/
+  background-color: rgba(41, 85, 222, 0.6);
 }
 
-/* line 36, src/scss/style.scss */
+/* line 12, src/scss/partials/_about.scss */
 .about-section .about-container {
   width: 100%;
   height: 100%;
-  backdrop-filter: blur(10px);
   margin: 10px;
 }
 
-/* line 42, src/scss/style.scss */
+/* line 18, src/scss/partials/_about.scss */
 .about-section .about-container .about-photo {
   float: left;
   width: 50%;
   height: 100%;
 }
 
-/* line 47, src/scss/style.scss */
+/* line 23, src/scss/partials/_about.scss */
 .about-section .about-container .about-photo img {
   width: 50%;
   height: 70%;
@@ -494,14 +482,14 @@ html {
   top: 25%;
 }
 
-/* line 60, src/scss/style.scss */
+/* line 36, src/scss/partials/_about.scss */
 .about-section .about-container .about-description {
   float: right;
   width: 50%;
   height: 100%;
 }
 
-/* line 65, src/scss/style.scss */
+/* line 41, src/scss/partials/_about.scss */
 .about-section .about-container .about-description h1 {
   text-align: center;
   margin: 15px;
@@ -512,7 +500,7 @@ html {
   font-weight: bold;
 }
 
-/* line 75, src/scss/style.scss */
+/* line 51, src/scss/partials/_about.scss */
 .about-section .about-container .about-description p {
   padding: 10px;
   text-align: center;
@@ -520,6 +508,133 @@ html {
   font-size: 20px;
   line-height: 30px;
   position: relative;
-  top: 20%;
+  top: 15%;
   right: 5%;
+}
+
+/* line 2, src/scss/partials/_skills.scss */
+.skills-section .skills-container {
+  position: relative;
+  left: 8%;
+}
+
+/* line 6, src/scss/partials/_skills.scss */
+.skills-section .skills-container h1 {
+  margin: 20px;
+  text-align: center;
+  font-size: 60px;
+}
+
+/* line 13, src/scss/partials/_skills.scss */
+.skills-section .skills-container .skill {
+  display: inline-block;
+}
+
+/* line 17, src/scss/partials/_skills.scss */
+.skills-section .skills-container div {
+  border: 1px solid black;
+  width: 250px;
+  height: 10%;
+  margin: 20px;
+  padding: 20px;
+}
+
+/* line 23, src/scss/partials/_skills.scss */
+.skills-section .skills-container div img {
+  width: 30%;
+  position: relative;
+  left: 35%;
+}
+
+/* line 28, src/scss/partials/_skills.scss */
+.skills-section .skills-container div img:hover {
+  top: 0.3%;
+}
+
+/* line 33, src/scss/partials/_skills.scss */
+.skills-section .skills-container div h2 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* line 12, src/scss/style.scss */
+html {
+  overflow-x: hidden;
+}
+
+/* line 17, src/scss/style.scss */
+body {
+  position: relative;
+  background: linear-gradient(15deg, #4E79B8, #8CA5CB, #C5D0E1);
+  animation: change 1s ease-in-out infinite;
+}
+
+/* line 23, src/scss/style.scss */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* line 29, src/scss/style.scss */
+.cuadrado {
+  border: 3px solid red;
+  margin-top: 10px;
+}
+
+@keyframes change {
+  0% {
+    background: linear-gradient(30deg, #8CA5CB, #4E79B8, #C5D0E1);
+  }
+  50% {
+    background: linear-gradient(60deg, #8CA5CB, #4E79B8, #C5D0E1);
+  }
+  100% {
+    background: linear-gradient(90deg, #8CA5CB, #4E79B8, #C5D0E1);
+  }
+}
+
+/* line 52, src/scss/style.scss */
+.portofolio-section .portofolio-container h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+/* line 57, src/scss/style.scss */
+.portofolio-section .portofolio-container .work1 {
+  display: inline-block;
+}
+
+/* line 59, src/scss/style.scss */
+.portofolio-section .portofolio-container .work1 img {
+  width: 50%;
+  margin: 25px;
+  margin-left: 10%;
+  border: 1px solid black;
+}
+
+/* line 66, src/scss/style.scss */
+.portofolio-section .portofolio-container .work1 .work-description {
+  width: 50rem;
+  height: 7rem;
+  padding: 10px;
+  background-color: rebeccapurple;
+  border-radius: 10px;
+  float: right;
+  right: 2%;
+  bottom: 200px;
+  position: relative;
+}
+
+/* line 77, src/scss/style.scss */
+.portofolio-section .portofolio-container .work1 .work-description .technologies {
+  display: block;
+  position: relative;
+  float: right;
+  padding-left: 50px;
+}
+
+/* line 83, src/scss/style.scss */
+.portofolio-section .portofolio-container .work1 .work-description .technologies span {
+  margin-left: 25px;
 }

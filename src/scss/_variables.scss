@@ -24,6 +24,7 @@ $span-box-shadow: inset 0px 0px 15px 5px $color-shadow-square;
 $span-border-radius: 4px;
 
 
+
 /*
 *  Menu variables
 */
@@ -49,6 +50,8 @@ $font-size-a: 30px;
 $font-weight-a: 600;
 
 $background-color-menu: rgba(41, 85, 222, 0.6);
+
+
 
 /*
 *       Home variables
@@ -84,3 +87,37 @@ $img-complement-height: 40%;
 
 $img-complement-margin: 15px auto;
 $img-complement-box-shadow: 0 3px 10px blue;
+
+
+
+/*
+ *  About variables   
+*/
+
+$width-section-about: 100%;
+$hegith-section-about: 50%;
+$width-container-about: 100%;
+
+$height-container-about: 100%;
+$width-photo-about: 50%;
+$height-photo-about: 100%;
+
+$width-description-about: 50%;
+$height-description-about: 100%;
+$font-size-title: 60px;
+
+$p-font-size-about: 20px;
+$line-height-p-about: 30px;
+
+
+/*
+ * Skills variables
+*/
+
+$margin-skills-h1: 20px;
+$width-div-skills: 250px;
+$heigth-div-skills: 10%;
+
+$margin-div-skills: 20px;
+$padding-div-skills: 20px;
+$width-img-skills: 30%;
