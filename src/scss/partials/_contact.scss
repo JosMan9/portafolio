@@ -1,0 +1,85 @@
+footer {
+    .contact-section {
+        margin-left: 20px;
+        margin-right: 20px;
+        position: relative;
+
+        .text-contact {
+
+            position: relative;
+            float: right;
+            right: 10%;
+            text-align: center;
+            top: 10rem;
+
+            h1 {
+                color: white;
+                font-size: 70px;
+                margin-top: 30px;
+                margin-bottom: 25px;
+
+            }
+
+            p {
+                color: white;
+                font-size: 30px;
+            }
+        }
+
+        .contact-container {
+            padding: 10px;
+
+            form {
+                margin-left: 10px;
+                width: 50%;
+
+                fieldset {
+                    padding-left: 10px;
+                    padding-bottom: 10px;
+                    padding-top: 10px;
+                    border-radius: 10px;
+                    border-color: rgba(26, 74, 90 , 0.8);
+
+                    legend {
+                        color: white;
+                        font-size: 35px;
+                        text-align: center;
+                        padding-left: 15px;
+                        padding-right: 15px;
+                    }
+
+                    label {
+                        color: white;
+                        font-size: 30px;
+                        margin: 15px;
+                    }
+
+                    input,
+                    textarea {
+                        @include inputs-style;
+                    }
+
+                    button {
+                        border-radius: 10px;
+                        padding: 10px;
+                        border: 2px solid blue;
+                        margin-left: 15px;
+                        font-size: 15px;
+                        font-style: italic;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: gray;
+                        }
+                    }
+
+                    a {
+                        opacity: 0;
+                    }
+
+                }
+            }
+        }
+
+    }
+}

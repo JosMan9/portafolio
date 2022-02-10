@@ -1,4 +1,3 @@
-
 /*
  * ! Loader
 */
@@ -32,13 +31,13 @@
 */
 
 @mixin color-active {
-    color: #438C56;
+    color: #0DE9C1;
     transition: 0.3s;
 }
 
-@mixin transitionMenu ($seg){
+@mixin transitionMenu ($seg) {
     @each $var in ('', '-moz-', '-webkit-', 'ms', '-o-') {
-       #{$var}transition:  $seg;
+        #{$var}transition: $seg;
     }
 }
 
@@ -46,8 +45,26 @@
 *   Home mixins
 */
 
-@mixin calc ($property, $expression){
+@mixin calc ($property, $expression) {
     @each $var in ('', '-moz-', '-webkit-') {
         #{$property}: #{$var}calc(#{$expression});
     }
+}
+
+
+/*
+ * Contact mixins
+*/
+
+@mixin inputs-style {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    margin-right: 15px;
+    width: 90%;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    border: 3px solid rgba(26, 74, 90 , 0.5);
+    ;
 }

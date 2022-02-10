@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="../dist/css/style.css">
     <title>Portafolio</title>
 </head>
+
 <body>
 
     <!-- Responsive menu  -->
@@ -24,11 +26,11 @@
                 </li>
                 <li class="menu-item">
                     <a href="#about">
-                        About   <span>|</span>
+                        About <span>|</span>
                     </a></li>
                 <li class="menu-item">
                     <a href="#skills">
-                        Skills   <span>|</span>
+                        Skills <span>|</span>
                     </a></li>
                 <li class="menu-item">
                     <a href="#portoflio">
@@ -36,7 +38,7 @@
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a href="">
+                    <a href="#contact">
                         Contact
                     </a>
                 </li>
@@ -61,8 +63,8 @@
                 <h1>¿Quién soy?</h1>
                 <p>Soy Programador Frontend.
                     Dedicado a la programación web, mobile y standalone.
-                Pasante de Ingeniería en proceso de titulación. </p>
-                    <img src="../dist/img/imagen.jpg" alt="Imagen de programador" class="img">
+                    Pasante de Ingeniería en proceso de titulación. </p>
+                <img src="../dist/img/imagen.jpg" alt="Imagen de programador" class="img">
             </div>
         </main>
     </header>
@@ -76,10 +78,13 @@
             </div>
             <div class="about-description">
                 <h1>About me</h1>
-                <p>Me llamo José Manuel Rosas López. Tengo 23 años y soy egresado de la Universidad Autónoma de Guerrero en Chilpancingo,
-                    Guerrero de Ingeniería en Computación. Oriundo del estado de Guerrero, actualmente soy Trainee FrontEnd Developer en Grupo
-                GFT México. Tengo experiencia desarrollando apps móviles nativas de Android, programas standalone y páginas web sencillas. Soy una
-                persona proactica, reponsable, autodictata y que sabe trabajar en equipo.
+                <p>Me llamo José Manuel Rosas López. Tengo 23 años y soy egresado de la Universidad Autónoma de Guerrero
+                    en Chilpancingo,
+                    Guerrero de Ingeniería en Computación. Oriundo del estado de Guerrero, actualmente soy Trainee
+                    FrontEnd Developer en Grupo
+                    GFT México. Tengo experiencia desarrollando apps móviles nativas de Android, programas standalone y
+                    páginas web sencillas. Soy una
+                    persona proactica, reponsable, autodictata y que sabe trabajar en equipo.
                 </p>
             </div>
         </div>
@@ -148,32 +153,69 @@
                 <img src="/dist/img/work-gradient-img.png" alt="Gradiente">
                 <div class="work-description">
                     <h2>Sitio web de Gradiente y Outline</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore ipsam illo fuga quasi voluptas, autem molestias minima doloremque voluptatibus saepe, rerum sequi? Excepturi officia amet maiores suscipit expedita magnam assumenda.</sp>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore ipsam illo fuga quasi voluptas,
+                        autem molestias minima doloremque voluptatibus saepe, rerum sequi? Excepturi officia amet
+                        maiores suscipit expedita magnam assumenda.</sp>
+
+                        <div class="technologies">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="work1">
+            <img src="/dist/img/work-gradient-img.png" alt="Gradiente">
+            <div class="work-description">
+                <h2>Sitio web de Gradiente y Outline</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore ipsam illo fuga quasi voluptas,
+                    autem molestias minima doloremque voluptatibus saepe, rerum sequi? Excepturi officia amet maiores
+                    suscipit expedita magnam assumenda.</sp>
 
                     <div class="technologies">
                         <span>HTML</span>
                         <span>CSS</span>
-                        <span>JavaScript</p>
-                    </div>
-                </div>
+                        <span>JavaScript
+                </p>
             </div>
-
-            <div class="work1">
-                <img src="/dist/img/work-gradient-img.png" alt="Gradiente">
-                <div class="work-description">
-                    <h2>Sitio web de Gradiente y Outline</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore ipsam illo fuga quasi voluptas, autem molestias minima doloremque voluptatibus saepe, rerum sequi? Excepturi officia amet maiores suscipit expedita magnam assumenda.</sp>
-
-                    <div class="technologies">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</p>
-                    </div>
-                </div>
-            </div>
+        </div>
+        </div>
 
         </div>
     </section>
+
+
+    <!-- Contact section -->
+
+    <footer>
+        <section class="contact-section" id="contact">
+            <div class="text-contact">
+                <h1>¡Contáctame!</h1>
+                <p>Juntos empecemos algo grandioso.</p>
+            </div>
+            <div class="contact-container">
+                <form action="" class="form-contact" id="form">
+                    <fieldset>
+                        <legend>Contact me</legend>
+                        <label for="">Nombre</label>
+                        <br>
+                        <input type="text" required name="name">
+                        <br>
+                        <label for="">Mensaje</label>
+                        <br>
+                        <textarea name="message" required id="message" cols="30" rows="10"></textarea>
+                        <br>
+                        <button type="submit" id="boton-submit">Enviar mensaje</button>
+                        <a href="mailto:josem.rl32@gmail.com" id="tomail"></a>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </footer>
+
+
 
 
     <!-- Loader -->
@@ -196,4 +238,5 @@
 
     <script src="../dist/js/script.js"></script>
 </body>
+
 </html>

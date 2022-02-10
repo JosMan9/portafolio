@@ -1,0 +1,41 @@
+.portofolio-section {
+    .portofolio-container {
+        h1 {
+            font-size: $font-size-title;
+            text-align: center;
+        }
+
+        .work1 {
+            display: inline-block;
+            img {
+                width: $width-img-portoflio;
+                margin: $margin-img-portfolio;
+                margin-left: 10%;
+                border: $border-img-portfolio;
+            }
+
+            .work-description {
+                width: $width-description-portfolio;
+                height: $height-description-portofolio;
+                padding: $padding-description-portofolio;
+                background-color: $background-description-portofolio;
+                border-radius: $border-radius-description-portofolio;
+                float: right;
+                right: 2%;
+                bottom: 200px;
+                position: relative;
+
+                .technologies {
+                    display: block;
+                    position: relative;
+                    float: right;
+                    padding-left: 50px;
+
+                    span {
+                        margin-left: 25px;
+                    }
+                }
+            }
+        }
+    }
+}

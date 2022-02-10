@@ -49,7 +49,10 @@ $color-a: #ffffff;
 $font-size-a: 30px;
 $font-weight-a: 600;
 
-$background-color-menu: rgba(41, 85, 222, 0.6);
+$background-color-menu: #0E2C40;
+/*
+rgba(41, 85, 222, 0.6);
+*/
 
 
 
@@ -121,3 +124,24 @@ $heigth-div-skills: 10%;
 $margin-div-skills: 20px;
 $padding-div-skills: 20px;
 $width-img-skills: 30%;
+
+
+/*
+ *  Portofolio variables
+*/
+
+$width-img-portoflio: 50%;
+$margin-img-portfolio: 25px;
+$border-img-portfolio: 1px solid black;
+
+$width-description-portfolio: 50rem;
+$height-description-portofolio: 7rem;
+$padding-description-portofolio: 10px;
+
+$background-description-portofolio: #3F7856;
+$border-radius-description-portofolio: 10px;
+
+
+/*
+ *  Contact section
+*/

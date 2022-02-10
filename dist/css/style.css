@@ -5,6 +5,9 @@
 *  Menu variables
 */
 /*
+rgba(41, 85, 222, 0.6);
+*/
+/*
 *       Home variables
 */
 /*
@@ -14,6 +17,12 @@
  * Skills variables
 */
 /*
+ *  Portofolio variables
+*/
+/*
+ *  Contact section
+*/
+/*
  * ! Loader
 */
 /*
@@ -21,6 +30,9 @@
 */
 /*
 *   Home mixins
+*/
+/*
+ * Contact mixins
 */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
 /* line 1, src/scss/partials/_loader.scss */
@@ -236,7 +248,7 @@ header nav .menu {
   width: 100%;
   height: 0vh;
   top: 100px;
-  background-color: rgba(85, 120, 229, 0.6);
+  background-color: #17496a;
   text-align: center;
   transition: 0.5s;
   -moz-transition: 0.5s;
@@ -266,13 +278,13 @@ header nav .menu li a {
 
 /* line 70, src/scss/partials/_menu.scss */
 header nav .menu li a:hover {
-  color: #438C56;
+  color: #0DE9C1;
   transition: 0.3s;
 }
 
 /* line 75, src/scss/partials/_menu.scss */
 header nav .menu li .active {
-  color: #438C56;
+  color: #0DE9C1;
   transition: 0.3s;
 }
 
@@ -285,7 +297,7 @@ header nav .menu i {
 
 /* line 85, src/scss/partials/_menu.scss */
 header nav .menu i:hover {
-  color: #438C56;
+  color: #0DE9C1;
   transition: 0.3s;
 }
 
@@ -341,7 +353,7 @@ header nav .menu .fa-linkedin:hover {
   }
   /* line 135, src/scss/partials/_menu.scss */
   nav .menu li a:hover {
-    color: #438C56;
+    color: #0DE9C1;
     transition: 0.3s;
   }
   /* line 139, src/scss/partials/_menu.scss */
@@ -454,24 +466,23 @@ main #item-description .img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;*/
-  background-color: rgba(41, 85, 222, 0.6);
 }
 
-/* line 12, src/scss/partials/_about.scss */
+/* line 11, src/scss/partials/_about.scss */
 .about-section .about-container {
   width: 100%;
   height: 100%;
   margin: 10px;
 }
 
-/* line 18, src/scss/partials/_about.scss */
+/* line 17, src/scss/partials/_about.scss */
 .about-section .about-container .about-photo {
   float: left;
   width: 50%;
   height: 100%;
 }
 
-/* line 23, src/scss/partials/_about.scss */
+/* line 22, src/scss/partials/_about.scss */
 .about-section .about-container .about-photo img {
   width: 50%;
   height: 70%;
@@ -482,14 +493,14 @@ main #item-description .img {
   top: 25%;
 }
 
-/* line 36, src/scss/partials/_about.scss */
+/* line 35, src/scss/partials/_about.scss */
 .about-section .about-container .about-description {
   float: right;
   width: 50%;
   height: 100%;
 }
 
-/* line 41, src/scss/partials/_about.scss */
+/* line 40, src/scss/partials/_about.scss */
 .about-section .about-container .about-description h1 {
   text-align: center;
   margin: 15px;
@@ -500,7 +511,7 @@ main #item-description .img {
   font-weight: bold;
 }
 
-/* line 51, src/scss/partials/_about.scss */
+/* line 50, src/scss/partials/_about.scss */
 .about-section .about-container .about-description p {
   padding: 10px;
   text-align: center;
@@ -557,26 +568,173 @@ main #item-description .img {
   margin-top: 10px;
 }
 
-/* line 12, src/scss/style.scss */
+/* line 3, src/scss/partials/_portofolio.scss */
+.portofolio-section .portofolio-container h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+/* line 8, src/scss/partials/_portofolio.scss */
+.portofolio-section .portofolio-container .work1 {
+  display: inline-block;
+}
+
+/* line 10, src/scss/partials/_portofolio.scss */
+.portofolio-section .portofolio-container .work1 img {
+  width: 50%;
+  margin: 25px;
+  margin-left: 10%;
+  border: 1px solid black;
+}
+
+/* line 17, src/scss/partials/_portofolio.scss */
+.portofolio-section .portofolio-container .work1 .work-description {
+  width: 50rem;
+  height: 7rem;
+  padding: 10px;
+  background-color: #3F7856;
+  border-radius: 10px;
+  float: right;
+  right: 2%;
+  bottom: 200px;
+  position: relative;
+}
+
+/* line 28, src/scss/partials/_portofolio.scss */
+.portofolio-section .portofolio-container .work1 .work-description .technologies {
+  display: block;
+  position: relative;
+  float: right;
+  padding-left: 50px;
+}
+
+/* line 34, src/scss/partials/_portofolio.scss */
+.portofolio-section .portofolio-container .work1 .work-description .technologies span {
+  margin-left: 25px;
+}
+
+/* line 2, src/scss/partials/_contact.scss */
+footer .contact-section {
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+}
+
+/* line 7, src/scss/partials/_contact.scss */
+footer .contact-section .text-contact {
+  position: relative;
+  float: right;
+  right: 10%;
+  text-align: center;
+  top: 10rem;
+}
+
+/* line 15, src/scss/partials/_contact.scss */
+footer .contact-section .text-contact h1 {
+  color: white;
+  font-size: 70px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+/* line 23, src/scss/partials/_contact.scss */
+footer .contact-section .text-contact p {
+  color: white;
+  font-size: 30px;
+}
+
+/* line 29, src/scss/partials/_contact.scss */
+footer .contact-section .contact-container {
+  padding: 10px;
+}
+
+/* line 32, src/scss/partials/_contact.scss */
+footer .contact-section .contact-container form {
+  margin-left: 10px;
+  width: 50%;
+}
+
+/* line 36, src/scss/partials/_contact.scss */
+footer .contact-section .contact-container form fieldset {
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 10px;
+  border-color: red;
+}
+
+/* line 43, src/scss/partials/_contact.scss */
+footer .contact-section .contact-container form fieldset legend {
+  color: white;
+  font-size: 35px;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 51, src/scss/partials/_contact.scss */
+footer .contact-section .contact-container form fieldset label {
+  color: white;
+  font-size: 30px;
+  margin: 15px;
+}
+
+/* line 57, src/scss/partials/_contact.scss */
+footer .contact-section .contact-container form fieldset input,
+footer .contact-section .contact-container form fieldset textarea {
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-bottom: 30px;
+  margin-right: 15px;
+  width: 90%;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 20px;
+  border: 3px solid rgba(26, 74, 90, 0.5);
+}
+
+/* line 62, src/scss/partials/_contact.scss */
+footer .contact-section .contact-container form fieldset button {
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid blue;
+  margin-left: 15px;
+  font-size: 15px;
+  font-style: italic;
+  cursor: pointer;
+}
+
+/* line 71, src/scss/partials/_contact.scss */
+footer .contact-section .contact-container form fieldset button:hover {
+  background-color: gray;
+}
+
+/* line 76, src/scss/partials/_contact.scss */
+footer .contact-section .contact-container form fieldset a {
+  opacity: 0;
+}
+
+/* line 14, src/scss/style.scss */
 html {
   overflow-x: hidden;
 }
 
-/* line 17, src/scss/style.scss */
+/* line 19, src/scss/style.scss */
 body {
   position: relative;
-  background: linear-gradient(15deg, #4E79B8, #8CA5CB, #C5D0E1);
-  animation: change 1s ease-in-out infinite;
+  /*background: linear-gradient(15deg, #4E79B8, #8CA5CB, #C5D0E1);*/
+  background-color: #1A4A5A;
+  /*animation: change 1s ease-in-out infinite;*/
 }
 
-/* line 23, src/scss/style.scss */
+/* line 26, src/scss/style.scss */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-/* line 29, src/scss/style.scss */
+/* line 32, src/scss/style.scss */
 .cuadrado {
   border: 3px solid red;
   margin-top: 10px;
@@ -592,49 +750,4 @@ body {
   100% {
     background: linear-gradient(90deg, #8CA5CB, #4E79B8, #C5D0E1);
   }
-}
-
-/* line 52, src/scss/style.scss */
-.portofolio-section .portofolio-container h1 {
-  font-size: 60px;
-  text-align: center;
-}
-
-/* line 57, src/scss/style.scss */
-.portofolio-section .portofolio-container .work1 {
-  display: inline-block;
-}
-
-/* line 59, src/scss/style.scss */
-.portofolio-section .portofolio-container .work1 img {
-  width: 50%;
-  margin: 25px;
-  margin-left: 10%;
-  border: 1px solid black;
-}
-
-/* line 66, src/scss/style.scss */
-.portofolio-section .portofolio-container .work1 .work-description {
-  width: 50rem;
-  height: 7rem;
-  padding: 10px;
-  background-color: rebeccapurple;
-  border-radius: 10px;
-  float: right;
-  right: 2%;
-  bottom: 200px;
-  position: relative;
-}
-
-/* line 77, src/scss/style.scss */
-.portofolio-section .portofolio-container .work1 .work-description .technologies {
-  display: block;
-  position: relative;
-  float: right;
-  padding-left: 50px;
-}
-
-/* line 83, src/scss/style.scss */
-.portofolio-section .portofolio-container .work1 .work-description .technologies span {
-  margin-left: 25px;
 }
