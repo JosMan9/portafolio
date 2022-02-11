@@ -49,3 +49,8 @@ body {
         background: linear-gradient(90deg, #8CA5CB, #4E79B8, #C5D0E1);
     }
 }
+
+aside {
+    position: sticky;
+    position: -webkit-sticky;
+}

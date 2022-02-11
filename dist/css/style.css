@@ -195,21 +195,17 @@ rgba(41, 85, 222, 0.6);
 
 /* line 1, src/scss/partials/_menu.scss */
 body {
-  /*background-image: url(/dist/img/fondo.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;*/
   backdrop-filter: blur(10px);
   height: 150vh;
 }
 
-/* line 10, src/scss/partials/_menu.scss */
+/* line 6, src/scss/partials/_menu.scss */
 header {
   width: 100%;
   height: 100vh;
 }
 
-/* line 15, src/scss/partials/_menu.scss */
+/* line 11, src/scss/partials/_menu.scss */
 header nav {
   height: 100px;
   width: 100%;
@@ -218,23 +214,24 @@ header nav {
   align-items: center;
 }
 
-/* line 24, src/scss/partials/_menu.scss */
+/* line 20, src/scss/partials/_menu.scss */
 header nav #checkbox:checked,
 header nav #checkbox {
   display: none;
 }
 
-/* line 29, src/scss/partials/_menu.scss */
+/* line 25, src/scss/partials/_menu.scss */
 header nav #checkbox:checked ~ .menu {
   height: 100vh;
+  z-index: 5;
 }
 
-/* line 33, src/scss/partials/_menu.scss */
+/* line 30, src/scss/partials/_menu.scss */
 header nav #checkbox:checked ~ .menu li {
   display: block;
 }
 
-/* line 38, src/scss/partials/_menu.scss */
+/* line 36, src/scss/partials/_menu.scss */
 header nav .bar-btn {
   font-size: 25px;
   color: #ffffff;
@@ -242,7 +239,7 @@ header nav .bar-btn {
   cursor: pointer;
 }
 
-/* line 45, src/scss/partials/_menu.scss */
+/* line 43, src/scss/partials/_menu.scss */
 header nav .menu {
   position: fixed;
   width: 100%;
@@ -257,7 +254,7 @@ header nav .menu {
   -o-transition: 0.5s;
 }
 
-/* line 54, src/scss/partials/_menu.scss */
+/* line 52, src/scss/partials/_menu.scss */
 header nav .menu li {
   display: none;
   line-height: 20px;
@@ -266,7 +263,7 @@ header nav .menu li {
   transition: all 0.5s;
 }
 
-/* line 62, src/scss/partials/_menu.scss */
+/* line 60, src/scss/partials/_menu.scss */
 header nav .menu li a {
   color: #ffffff;
   margin-bottom: 10px;
@@ -276,87 +273,87 @@ header nav .menu li a {
   text-decoration: none;
 }
 
-/* line 70, src/scss/partials/_menu.scss */
+/* line 68, src/scss/partials/_menu.scss */
 header nav .menu li a:hover {
   color: #0DE9C1;
   transition: 0.3s;
 }
 
-/* line 75, src/scss/partials/_menu.scss */
+/* line 73, src/scss/partials/_menu.scss */
 header nav .menu li .active {
   color: #0DE9C1;
   transition: 0.3s;
 }
 
-/* line 80, src/scss/partials/_menu.scss */
+/* line 78, src/scss/partials/_menu.scss */
 header nav .menu i {
   color: white;
   padding: 5px;
   cursor: pointer;
 }
 
-/* line 85, src/scss/partials/_menu.scss */
+/* line 83, src/scss/partials/_menu.scss */
 header nav .menu i:hover {
   color: #0DE9C1;
   transition: 0.3s;
 }
 
-/* line 90, src/scss/partials/_menu.scss */
+/* line 88, src/scss/partials/_menu.scss */
 header nav .menu .fa-facebook:hover {
   color: #0147b7;
 }
 
-/* line 94, src/scss/partials/_menu.scss */
+/* line 92, src/scss/partials/_menu.scss */
 header nav .menu .fa-whatsapp:hover {
   color: #39D845;
 }
 
-/* line 98, src/scss/partials/_menu.scss */
+/* line 96, src/scss/partials/_menu.scss */
 header nav .menu .fa-github:hover {
   color: #545554;
 }
 
-/* line 102, src/scss/partials/_menu.scss */
+/* line 100, src/scss/partials/_menu.scss */
 header nav .menu .fa-linkedin:hover {
   color: #0147b7;
 }
 
 @media (min-width: 1000px) {
-  /* line 110, src/scss/partials/_menu.scss */
+  /* line 108, src/scss/partials/_menu.scss */
   nav {
     height: 100px !important;
   }
-  /* line 113, src/scss/partials/_menu.scss */
+  /* line 111, src/scss/partials/_menu.scss */
   nav .bar-btn {
     display: none;
   }
-  /* line 117, src/scss/partials/_menu.scss */
+  /* line 115, src/scss/partials/_menu.scss */
   nav .menu {
     position: relative !important;
     height: 100px !important;
     top: 0 !important;
-    background: none !important;
     transition: none !important;
     text-align: right !important;
     margin-right: 50px !important;
+    background: transparent !important;
   }
-  /* line 126, src/scss/partials/_menu.scss */
+  /* line 124, src/scss/partials/_menu.scss */
   nav .menu li {
     display: inline-block !important;
     line-height: 100px !important;
     margin: 0 20px !important;
     transition: none !important;
   }
-  /* line 132, src/scss/partials/_menu.scss */
+  /* line 130, src/scss/partials/_menu.scss */
   nav .menu li a {
     font-size: 20px !important;
   }
-  /* line 135, src/scss/partials/_menu.scss */
+  /* line 133, src/scss/partials/_menu.scss */
   nav .menu li a:hover {
     color: #0DE9C1;
     transition: 0.3s;
   }
-  /* line 139, src/scss/partials/_menu.scss */
+  /* line 137, src/scss/partials/_menu.scss */
   nav .menu li a span {
     margin-left: 10px;
   }
@@ -366,11 +363,11 @@ header nav .menu .fa-linkedin:hover {
 main {
   width: 90%;
   height: 90%;
-  background-color: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  /*background-color: $main-background-color;
+    border: $main-border;*/
   margin: auto;
-  box-shadow: 0 3px 10px white;
-  border-radius: 10%;
+  /*box-shadow: $main-box-shadow;
+    border-radius: 10%;*/
 }
 
 /* line 10, src/scss/partials/_home.scss */
@@ -379,16 +376,17 @@ main .item {
   margin-top: 1em;
   height: 92%;
   margin-bottom: 1em;
+  display: inline-block;
 }
 
-/* line 18, src/scss/partials/_home.scss */
+/* line 19, src/scss/partials/_home.scss */
 main #item-photo {
   width: 45%;
   float: left;
   margin-left: 1em;
 }
 
-/* line 23, src/scss/partials/_home.scss */
+/* line 24, src/scss/partials/_home.scss */
 main #item-photo img {
   width: 70%;
   height: 70%;
@@ -397,61 +395,94 @@ main #item-photo img {
   margin: auto;
   left: 15%;
   top: 25%;
+  z-index: 1;
+  box-shadow: 1px 2px 20px #0DE9C1;
 }
 
-/* line 36, src/scss/partials/_home.scss */
+/* line 38, src/scss/partials/_home.scss */
 main #item-description {
   width: 45%;
   float: right;
   margin-right: 1em;
   text-align: center;
+  /*&::before {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 42%;
+            padding-right: 1px;
+            @include calc(left, '50% - 1px');
+            @include calc(top, '20% - 1px');
+            background-color: $separation-background-color
+        }*/
 }
 
-/* line 42, src/scss/partials/_home.scss */
-main #item-description::before {
-  content: '';
-  position: absolute;
-  width: 1px;
-  height: 42%;
-  padding-right: 1px;
-  left: calc(50% - 1px);
-  left: -moz-calc(50% - 1px);
-  left: -webkit-calc(50% - 1px);
-  top: calc(20% - 1px);
-  top: -moz-calc(20% - 1px);
-  top: -webkit-calc(20% - 1px);
-  background-color: black;
-}
-
-/* line 53, src/scss/partials/_home.scss */
+/* line 55, src/scss/partials/_home.scss */
 main #item-description h1 {
   font-size: 300%;
   font-weight: 800;
   padding: 15px;
+  color: white;
 }
 
-/* line 59, src/scss/partials/_home.scss */
+/* line 62, src/scss/partials/_home.scss */
 main #item-description p {
   margin-top: 20px;
   font-size: 200%;
   padding: 10px;
+  color: wheat;
 }
 
-/* line 65, src/scss/partials/_home.scss */
+/* line 69, src/scss/partials/_home.scss */
 main #item-description .img {
   width: 50%;
   height: 40%;
   margin: 15px auto;
-  box-shadow: 0 3px 10px blue;
+  box-shadow: 1px 2px 20px #0DE9C1;
+  border-radius: 10px;
 }
 
-@media (max-width: 1000px) {
-  /* line 78, src/scss/partials/_home.scss */
-  p {
-    font-size: 150% !important;
+@media (max-width: 800px) {
+  /* line 83, src/scss/partials/_home.scss */
+  main {
+    display: block;
   }
-  /* line 82, src/scss/partials/_home.scss */
-  .img {
+  /* line 85, src/scss/partials/_home.scss */
+  main .item {
+    display: block;
+  }
+  /* line 89, src/scss/partials/_home.scss */
+  main #item-photo {
+    width: 90% !important;
+    align-items: center !important;
+  }
+  /* line 93, src/scss/partials/_home.scss */
+  main #item-photo img {
+    display: block !important;
+    float: none !important;
+    top: 10% !important;
+    left: 10px !important;
+  }
+  /* line 101, src/scss/partials/_home.scss */
+  main #item-description {
+    position: relative !important;
+    display: block !important;
+    float: none !important;
+    left: 10% !important;
+    width: 90% !important;
+    text-align: center !important;
+    left: 30px !important;
+    text-align: center !important;
+    bottom: 15% !important;
+  }
+  /* line 113, src/scss/partials/_home.scss */
+  main #item-description p {
+    font-size: 150% !important;
+    display: block;
+    float: none;
+  }
+  /* line 119, src/scss/partials/_home.scss */
+  main #item-description .img {
     display: none !important;
     height: 10px !important;
   }
@@ -491,16 +522,17 @@ main #item-description .img {
   margin: auto;
   left: 15%;
   top: 25%;
+  box-shadow: 1px 2px 20px #0DE9C1;
 }
 
-/* line 35, src/scss/partials/_about.scss */
+/* line 37, src/scss/partials/_about.scss */
 .about-section .about-container .about-description {
   float: right;
   width: 50%;
   height: 100%;
 }
 
-/* line 40, src/scss/partials/_about.scss */
+/* line 42, src/scss/partials/_about.scss */
 .about-section .about-container .about-description h1 {
   text-align: center;
   margin: 15px;
@@ -509,9 +541,10 @@ main #item-description .img {
   right: 5%;
   font-size: 60px;
   font-weight: bold;
+  color: white;
 }
 
-/* line 50, src/scss/partials/_about.scss */
+/* line 53, src/scss/partials/_about.scss */
 .about-section .about-container .about-description p {
   padding: 10px;
   text-align: center;
@@ -521,6 +554,44 @@ main #item-description .img {
   position: relative;
   top: 15%;
   right: 5%;
+}
+
+@media (max-width: 800px) {
+  /* line 68, src/scss/partials/_about.scss */
+  .about-section {
+    display: block !important;
+  }
+  /* line 71, src/scss/partials/_about.scss */
+  .about-section .about-container .about-photo {
+    display: block !important;
+    float: none !important;
+    width: 100% !important;
+    align-items: center !important;
+  }
+  /* line 77, src/scss/partials/_about.scss */
+  .about-section .about-container .about-photo img {
+    display: block !important;
+    float: none !important;
+    top: 40% !important;
+    left: -20px !important;
+  }
+  /* line 85, src/scss/partials/_about.scss */
+  .about-section .about-container .about-description {
+    position: relative !important;
+    display: block !important;
+    float: none !important;
+    left: 10% !important;
+    width: 90% !important;
+    text-align: center !important;
+    left: 30px !important;
+    text-align: center !important;
+    bottom: 15% !important;
+  }
+  /* line 96, src/scss/partials/_about.scss */
+  .about-section .about-container .about-description h1 {
+    position: relative !important;
+    top: 20% !important;
+  }
 }
 
 /* line 2, src/scss/partials/_skills.scss */
@@ -534,52 +605,95 @@ main #item-description .img {
   margin: 20px;
   text-align: center;
   font-size: 60px;
+  color: white;
 }
 
-/* line 13, src/scss/partials/_skills.scss */
+/* line 14, src/scss/partials/_skills.scss */
 .skills-section .skills-container .skill {
   display: inline-block;
-}
-
-/* line 17, src/scss/partials/_skills.scss */
-.skills-section .skills-container div {
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   width: 250px;
   height: 10%;
   margin: 20px;
   padding: 20px;
+  color: white;
 }
 
 /* line 23, src/scss/partials/_skills.scss */
-.skills-section .skills-container div img {
+.skills-section .skills-container .skill img {
   width: 30%;
   position: relative;
   left: 35%;
 }
 
 /* line 28, src/scss/partials/_skills.scss */
-.skills-section .skills-container div img:hover {
-  top: 0.3%;
+.skills-section .skills-container .skill img:hover ~ h2 {
+  box-shadow: 1px 2px 20px #0DE9C1;
+  border-radius: 10%;
+  width: 50%;
+  display: none;
 }
 
-/* line 33, src/scss/partials/_skills.scss */
-.skills-section .skills-container div h2 {
+/* line 35, src/scss/partials/_skills.scss */
+.skills-section .skills-container .skill img:hover {
+  box-shadow: 1px 2px 20px #0DE9C1;
+  border-radius: 10%;
+  width: 50%;
+}
+
+/* line 42, src/scss/partials/_skills.scss */
+.skills-section .skills-container .skill h2 {
   text-align: center;
   margin-top: 10px;
+}
+
+@media (max-width: 800px) {
+  /* line 51, src/scss/partials/_skills.scss */
+  .skills-section {
+    align-items: center !important;
+    position: relative !important;
+    margin: 0 auto !important;
+  }
+  /* line 56, src/scss/partials/_skills.scss */
+  .skills-section .skills-container {
+    display: block !important;
+    float: none !important;
+    top: 400px !important;
+    left: 10px !important;
+    margin-left: 1px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  /* line 69, src/scss/partials/_skills.scss */
+  .skills-section .skills-container {
+    display: block !important;
+    float: none !important;
+    top: 450px !important;
+    left: 25% !important;
+    margin-left: 1px !important;
+  }
+  /* line 76, src/scss/partials/_skills.scss */
+  .skills-section .skills-container h1 {
+    text-align: center;
+    width: 250px;
+    left: 100% !important;
+  }
 }
 
 /* line 3, src/scss/partials/_portofolio.scss */
 .portofolio-section .portofolio-container h1 {
   font-size: 60px;
   text-align: center;
+  color: white;
 }
 
-/* line 8, src/scss/partials/_portofolio.scss */
+/* line 9, src/scss/partials/_portofolio.scss */
 .portofolio-section .portofolio-container .work1 {
   display: inline-block;
 }
 
-/* line 10, src/scss/partials/_portofolio.scss */
+/* line 11, src/scss/partials/_portofolio.scss */
 .portofolio-section .portofolio-container .work1 img {
   width: 50%;
   margin: 25px;
@@ -587,11 +701,11 @@ main #item-description .img {
   border: 1px solid black;
 }
 
-/* line 17, src/scss/partials/_portofolio.scss */
+/* line 18, src/scss/partials/_portofolio.scss */
 .portofolio-section .portofolio-container .work1 .work-description {
   width: 50rem;
   height: 7rem;
-  padding: 10px;
+  padding: 5px;
   background-color: #3F7856;
   border-radius: 10px;
   float: right;
@@ -600,7 +714,7 @@ main #item-description .img {
   position: relative;
 }
 
-/* line 28, src/scss/partials/_portofolio.scss */
+/* line 29, src/scss/partials/_portofolio.scss */
 .portofolio-section .portofolio-container .work1 .work-description .technologies {
   display: block;
   position: relative;
@@ -608,19 +722,59 @@ main #item-description .img {
   padding-left: 50px;
 }
 
-/* line 34, src/scss/partials/_portofolio.scss */
+/* line 35, src/scss/partials/_portofolio.scss */
 .portofolio-section .portofolio-container .work1 .work-description .technologies span {
   margin-left: 25px;
 }
 
-/* line 2, src/scss/partials/_contact.scss */
+@media (max-width: 800px) {
+  /* line 45, src/scss/partials/_portofolio.scss */
+  .portofolio-section {
+    align-items: center !important;
+    position: relative !important;
+    margin: 0 auto !important;
+    display: block !important;
+    float: none;
+  }
+  /* line 51, src/scss/partials/_portofolio.scss */
+  .portofolio-section .portofolio-container {
+    position: relative;
+    top: 500px !important;
+  }
+  /* line 56, src/scss/partials/_portofolio.scss */
+  .portofolio-section .portofolio-container .work1 img {
+    width: 90% !important;
+    left: 20% !important;
+    margin-left: 25px;
+    opacity: 0.4;
+  }
+  /* line 63, src/scss/partials/_portofolio.scss */
+  .portofolio-section .portofolio-container .work1 .work-description {
+    width: 90% !important;
+    right: 5% !important;
+    background-color: transparent !important;
+    color: white;
+    text-align: center;
+  }
+  /* line 71, src/scss/partials/_portofolio.scss */
+  .portofolio-section .portofolio-container .work1 .technologies {
+    display: none !important;
+  }
+}
+
+/* line 1, src/scss/partials/_contact.scss */
+footer {
+  background-color: #0D3441;
+}
+
+/* line 5, src/scss/partials/_contact.scss */
 footer .contact-section {
   margin-left: 20px;
   margin-right: 20px;
   position: relative;
 }
 
-/* line 7, src/scss/partials/_contact.scss */
+/* line 10, src/scss/partials/_contact.scss */
 footer .contact-section .text-contact {
   position: relative;
   float: right;
@@ -629,7 +783,7 @@ footer .contact-section .text-contact {
   top: 10rem;
 }
 
-/* line 15, src/scss/partials/_contact.scss */
+/* line 18, src/scss/partials/_contact.scss */
 footer .contact-section .text-contact h1 {
   color: white;
   font-size: 70px;
@@ -637,33 +791,33 @@ footer .contact-section .text-contact h1 {
   margin-bottom: 25px;
 }
 
-/* line 23, src/scss/partials/_contact.scss */
+/* line 26, src/scss/partials/_contact.scss */
 footer .contact-section .text-contact p {
   color: white;
   font-size: 30px;
 }
 
-/* line 29, src/scss/partials/_contact.scss */
+/* line 32, src/scss/partials/_contact.scss */
 footer .contact-section .contact-container {
   padding: 10px;
 }
 
-/* line 32, src/scss/partials/_contact.scss */
+/* line 35, src/scss/partials/_contact.scss */
 footer .contact-section .contact-container form {
   margin-left: 10px;
   width: 50%;
 }
 
-/* line 36, src/scss/partials/_contact.scss */
+/* line 39, src/scss/partials/_contact.scss */
 footer .contact-section .contact-container form fieldset {
   padding-left: 10px;
   padding-bottom: 10px;
   padding-top: 10px;
   border-radius: 10px;
-  border-color: red;
+  border: 2px solid #0DE9C1;
 }
 
-/* line 43, src/scss/partials/_contact.scss */
+/* line 46, src/scss/partials/_contact.scss */
 footer .contact-section .contact-container form fieldset legend {
   color: white;
   font-size: 35px;
@@ -672,14 +826,14 @@ footer .contact-section .contact-container form fieldset legend {
   padding-right: 15px;
 }
 
-/* line 51, src/scss/partials/_contact.scss */
+/* line 54, src/scss/partials/_contact.scss */
 footer .contact-section .contact-container form fieldset label {
   color: white;
   font-size: 30px;
   margin: 15px;
 }
 
-/* line 57, src/scss/partials/_contact.scss */
+/* line 60, src/scss/partials/_contact.scss */
 footer .contact-section .contact-container form fieldset input,
 footer .contact-section .contact-container form fieldset textarea {
   margin-top: 15px;
@@ -690,28 +844,80 @@ footer .contact-section .contact-container form fieldset textarea {
   border-radius: 10px;
   padding: 10px;
   font-size: 20px;
-  border: 3px solid rgba(26, 74, 90, 0.5);
+  border: 3px solid #0DE9C1;
 }
 
-/* line 62, src/scss/partials/_contact.scss */
+/* line 65, src/scss/partials/_contact.scss */
 footer .contact-section .contact-container form fieldset button {
-  border-radius: 10px;
-  padding: 10px;
-  border: 2px solid blue;
+  box-shadow: inset 18px 4px 18px 1px #1564ad;
+  background-color: transparent;
   margin-left: 15px;
-  font-size: 15px;
+  border-radius: 33px;
+  border: 4px solid #337bc4;
+  display: inline-block;
+  color: #ffffff;
+  font-family: Times New Roman;
+  font-size: 17px;
+  font-weight: bold;
   font-style: italic;
+  padding: 12px 46px;
+  text-decoration: none;
+  text-shadow: 5px 2px 7px #528ecc;
   cursor: pointer;
 }
 
-/* line 71, src/scss/partials/_contact.scss */
+/* line 82, src/scss/partials/_contact.scss */
 footer .contact-section .contact-container form fieldset button:hover {
   background-color: gray;
 }
 
-/* line 76, src/scss/partials/_contact.scss */
+/* line 86, src/scss/partials/_contact.scss */
+footer .contact-section .contact-container form fieldset button:active {
+  position: relative;
+  top: 1px;
+}
+
+/* line 92, src/scss/partials/_contact.scss */
 footer .contact-section .contact-container form fieldset a {
   opacity: 0;
+}
+
+@media (max-width: 800px) {
+  /* line 104, src/scss/partials/_contact.scss */
+  footer {
+    position: relative;
+    top: 60%;
+  }
+  /* line 108, src/scss/partials/_contact.scss */
+  footer .contact-section {
+    position: relative;
+    display: block;
+  }
+  /* line 112, src/scss/partials/_contact.scss */
+  footer .contact-section .text-contact {
+    position: relative;
+    display: block !important;
+    top: 600px !important;
+    width: 100vw;
+    right: 0 !important;
+    text-align: center !important;
+  }
+  /* line 123, src/scss/partials/_contact.scss */
+  footer .contact-container {
+    width: 90% !important;
+  }
+  /* line 126, src/scss/partials/_contact.scss */
+  footer .contact-container form {
+    width: 110% !important;
+    position: relative;
+    margin: 10px auto;
+    left: 1%;
+    bottom: 150px;
+  }
+  /* line 133, src/scss/partials/_contact.scss */
+  footer .contact-container form fieldset {
+    width: 100% !important;
+  }
 }
 
 /* line 14, src/scss/style.scss */
@@ -750,4 +956,10 @@ body {
   100% {
     background: linear-gradient(90deg, #8CA5CB, #4E79B8, #C5D0E1);
   }
+}
+
+/* line 53, src/scss/style.scss */
+aside {
+  position: sticky;
+  position: -webkit-sticky;
 }

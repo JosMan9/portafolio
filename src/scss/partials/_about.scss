@@ -27,6 +27,8 @@
                 margin: auto;
                 left: $photo-left;
                 top: $photo-top;
+                box-shadow: 1px 2px 20px #0DE9C1;
+
 
             }
 
@@ -45,6 +47,7 @@
                 right: 5%;
                 font-size: $font-size-title;
                 font-weight: bold;
+                color: white;
             }
 
             p {
@@ -57,6 +60,46 @@
                 top: 15%;
                 right: 5%;
             }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .about-section {
+        display: block !important;
+        .about-container {
+            .about-photo {
+                display: block !important;
+                float: none !important;
+                width: 100% !important;
+                align-items: center !important;
+
+                img {
+                    display: block !important;
+                    float: none !important;
+                    top: 40% !important;
+                    left: -20px !important;
+                }
+            }
+
+            .about-description {
+                position: relative !important;
+                display: block !important;
+                float: none !important;
+                left: 10% !important;
+                width: 90% !important;
+                text-align: center !important;
+                left:  30px !important;
+                text-align: center !important;
+                bottom: 15% !important;
+
+                h1 {
+                    position: relative !important;
+                    top: 20% !important;
+
+                }
+            }
+            
         }
     }
 }

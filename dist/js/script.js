@@ -20,3 +20,34 @@ $form.addEventListener('submit', (event) => {
     $link.click();
 
 });
+
+const $iFace = document.getElementById('face-img');
+const $aFace = document.getElementById('face');
+
+$iFace.addEventListener('click', () => {
+    $aFace.click();
+});
+
+
+const $iWhats = document.getElementById('whats-img');
+const $aWhats = document.getElementById('whats');
+
+$iWhats.addEventListener('click', () => {
+    $aWhats.click();
+});
+
+
+const $iGit = document.getElementById('git-img');
+const $aGit = document.getElementById('git');
+
+$iGit.addEventListener('click', () => {
+    $aGit.click();
+});
+
+
+const $iLinkedin = document.getElementById('linkedin-img');
+const $aLinkedin = document.getElementById('linkedin');
+
+$iLinkedin.addEventListener('click', () => {
+    $aLinkedin.click();
+});

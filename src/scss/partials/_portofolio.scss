@@ -3,6 +3,7 @@
         h1 {
             font-size: $font-size-title;
             text-align: center;
+            color: white;
         }
 
         .work1 {
@@ -35,6 +36,42 @@
                         margin-left: 25px;
                     }
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .portofolio-section {
+        align-items: center !important;
+        position: relative !important;
+        margin: 0 auto !important;
+        display: block !important;
+        float: none;
+        .portofolio-container {
+            position: relative;
+            top: 500px !important;
+
+            .work1 {
+                img {
+                   width: 90% !important;
+                   left: 20% !important;
+                   margin-left: 25px;
+                   opacity: 0.4;
+                }
+
+                .work-description {
+                    width: 90% !important;
+                    right: 5% !important;
+                    background-color: transparent !important;
+                    color: white;
+                    text-align: center;
+                }
+
+                .technologies {
+                    display: none !important;
+                }
+                
             }
         }
     }
