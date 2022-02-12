@@ -51,3 +51,8 @@ const $aLinkedin = document.getElementById('linkedin');
 $iLinkedin.addEventListener('click', () => {
     $aLinkedin.click();
 });
+
+AOS.init( {
+    duration: 1500
+});
+
