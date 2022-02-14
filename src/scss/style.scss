@@ -18,39 +18,11 @@ html {
 
 body {
     position: relative;
-    /*background: linear-gradient(15deg, #4E79B8, #8CA5CB, #C5D0E1);*/
-    background-color: #1A4A5A;
-    /*animation: change 1s ease-in-out infinite;*/
+    background-color: $primary-color;
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-.cuadrado {
-    border: 3px solid red;
-    margin-top: 10px;
-}
-
-@keyframes change {
-    0% {
-        background: linear-gradient(30deg, #8CA5CB, #4E79B8, #C5D0E1);
-
-    }
-
-    50% {
-        background: linear-gradient(60deg, #8CA5CB, #4E79B8, #C5D0E1);
-
-    }
-
-    100% {
-        background: linear-gradient(90deg, #8CA5CB, #4E79B8, #C5D0E1);
-    }
-}
-
-aside {
-    position: sticky;
-    position: -webkit-sticky;
 }

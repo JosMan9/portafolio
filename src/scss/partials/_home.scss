@@ -1,11 +1,7 @@
 main {
     width: $main-width;
     height: $main-height;
-    /*background-color: $main-background-color;
-    border: $main-border;*/
     margin: auto;
-    /*box-shadow: $main-box-shadow;
-    border-radius: 10%;*/
 
     .item {
         padding: 1%;
@@ -30,7 +26,7 @@ main {
             left: $photo-left;
             top: $photo-top;
             z-index: 1;
-            box-shadow: 1px 2px 20px #0DE9C1;
+            box-shadow: 1px 2px 20px $secondary-color;
         }
         
     }
@@ -40,17 +36,6 @@ main {
         float: right;
         margin-right: 1em;
         text-align: center;
-
-        /*&::before {
-            content: '';
-            position: absolute;
-            width: 1px;
-            height: 42%;
-            padding-right: 1px;
-            @include calc(left, '50% - 1px');
-            @include calc(top, '20% - 1px');
-            background-color: $separation-background-color
-        }*/
 
         h1 {
             font-size: $h1-description-font-size;
@@ -70,7 +55,7 @@ main {
             width: $img-complement-width;
             height: $img-complement-height;
             margin: $img-complement-margin;
-            box-shadow: 1px 2px 20px #0DE9C1;
+            box-shadow: 1px 2px 20px $secondary-color;
             border-radius: 10px;
         }
     }
@@ -89,7 +74,7 @@ main {
         #item-photo {
             width: 90% !important;
             align-items: center !important;
-    
+
             img {
                 display: block !important;
                 float: none !important;
@@ -115,14 +100,11 @@ main {
                 display: block;
                 float: none;
             }
-            
+
             .img {
                 display: none !important;
                 height: 10px !important;
             }
         }
-
-
     }
-
 }

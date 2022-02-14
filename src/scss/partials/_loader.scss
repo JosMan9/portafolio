@@ -97,14 +97,17 @@
 @keyframes rotate {
     0% {
         @include transform(0deg);
+        animation-delay: 3s;
     }
 
     50% {
         @include transform(360deg);
+        animation-delay: 3s;
     }
 
     100% {
         @include transform(0deg);
+        animation-delay: 3s;
     }
 }
 

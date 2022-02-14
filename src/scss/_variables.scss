@@ -1,4 +1,5 @@
-
+$primary-color: #1A4A5A;
+$secondary-color: #0DE9C1;
 /*
 *     Loader variables
 */
@@ -145,3 +146,45 @@ $border-radius-description-portofolio: 10px;
 /*
  *  Contact section
 */
+
+$footer-background-color: #0D3441;
+$contact-section-margin-left: 20px;
+$contact-section-margin-right: 20px;
+
+$font-size-contact-h1: 70px;
+$margin-top-contact-h1: 30px;
+$margin-bottom-ontact-h1: 25px;
+
+$font-size-contact-p: 30px;
+$margin-left-contact-form: 10px;
+$padding-left-contact-fieldset: 10px;
+
+$padding-bottom-contact-fieldset: 10px;
+$padding-top-contact-fieldset: 10px;
+$border-radius-contact-fieldset: 10px;
+
+$border-contact-fieldset: 2px solid $secondary-color;
+$font-size-legend: 35px;
+$padding-left-legend: 15px;
+
+$padding-right-legend: 15px;
+$font-size-label: 30px;
+$margin-label: 15px;
+
+$box-shadow-button-contact: inset 18px 4px 18px 1px #1564ad;
+$background-color-button-contact: transparent;
+$margin-left-button-contact: 15px;
+
+$border-radius-button-contact: 33px;
+$border-button-contact: 4px solid #337bc4;
+$font-family-button-contact: Times New Roman;
+
+$font-size-button-contact: 17px;
+$font-weight-button-contact: bold;
+$font-style-button-contact: italic;
+
+$padding-button-contact: 12px 46px;
+$text-shadow-button-contact: 20px 6px 7px #528ecc;
+
+
+

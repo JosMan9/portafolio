@@ -8,33 +8,95 @@
 
         .work1 {
             display: inline-block;
+
             img {
                 width: $width-img-portoflio;
                 margin: $margin-img-portfolio;
                 margin-left: 10%;
                 border: $border-img-portfolio;
+                -webkit-box-shadow: -21px -4px 8px -4px rgba(13, 233, 193, 0.52);
+                box-shadow: -21px -4px 8px -4px rgba(13, 233, 193, 0.52);
+                cursor: pointer;
+
+                &:hover {
+                    opacity: 0.4;
+                }
             }
 
             .work-description {
                 width: $width-description-portfolio;
                 height: $height-description-portofolio;
                 padding: $padding-description-portofolio;
-                background-color: $background-description-portofolio;
-                border-radius: $border-radius-description-portofolio;
                 float: right;
                 right: 2%;
-                bottom: 200px;
+                bottom: 250px;
                 position: relative;
+
+                h2 {
+                    text-align: end;
+                    padding-right: 35px;
+                    color: white;
+                    padding-bottom: 15px;
+                }
+
+                p {
+                    background-color: $background-description-portofolio;
+                    border-radius: $border-radius-description-portofolio;
+                    padding: 20px;
+                    -webkit-box-shadow: inset -26px 0px 22px -5px $secondary-color;
+                    box-shadow: inset -26px 0px 22px -5px $secondary-color;
+
+                }
 
                 .technologies {
                     display: block;
                     position: relative;
                     float: right;
                     padding-left: 50px;
+                    color: white;
+                    margin-top: 10px;
 
                     span {
                         margin-left: 25px;
+                        padding: 20px;
+                        font-size: 20px;
+                        font-weight: bold;
+
                     }
+                }
+            }
+        }
+
+        .other-projects {
+            background-color: transparent;
+            width: 40%;
+            height: 10%;
+            color: wheat;
+            align-items: center;
+            margin: 15px auto;
+            margin-bottom: 25px;
+            text-align: center;
+            padding: 20px;
+            border-radius: $border-radius-description-portofolio;
+            -webkit-box-shadow: 0px -1px 20px 5px $secondary-color;
+            box-shadow: 0px -1px 20px 5px $secondary-color;
+
+            h2 {
+                font-size: 40px;
+                font-weight: bold;
+            }
+
+            p {
+                padding: 10px;
+                font-size: 20px;
+            }
+
+            i {
+                padding: 15px;
+                cursor: pointer;
+
+                &:hover {
+                    color: $secondary-color;
                 }
             }
         }
@@ -48,16 +110,33 @@
         margin: 0 auto !important;
         display: block !important;
         float: none;
+
         .portofolio-container {
             position: relative;
             top: 500px !important;
 
             .work1 {
                 img {
-                   width: 90% !important;
-                   left: 20% !important;
-                   margin-left: 25px;
-                   opacity: 0.4;
+                    width: 90% !important;
+                    left: 20% !important;
+                    margin-left: 25px;
+                    opacity: 0.4;
+
+                    &:hover {
+                        opacity: 0.6;
+                    }
+
+                    &:hover ~ .work-description {
+                        h2 {
+                            color: whitesmoke;
+                        }
+
+                        p {
+                            color: black;
+                            font-weight: bold;
+
+                        }
+                    }
                 }
 
                 .work-description {
@@ -66,12 +145,26 @@
                     background-color: transparent !important;
                     color: white;
                     text-align: center;
+
+                    p {
+                        background-color: transparent !important;
+                        -webkit-box-shadow: none;
+                        box-shadow: none;
+                        text-align: center;
+                    }
+
+                    h2 {
+                        text-align: center;
+                    }
                 }
 
                 .technologies {
                     display: none !important;
                 }
-                
+            }
+
+            .other-projects {
+                background-color: transparent !important;
             }
         }
     }

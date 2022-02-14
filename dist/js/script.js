@@ -2,15 +2,16 @@ window.addEventListener("load", function() {
     this.document.getElementById("loader").classList.toggle("loader2");
 });
 
+/**
+ *  Evento del form para mandar a un servicio de correo electrónico
+ */
 const $form = document.getElementById('form');
 const $link = document.getElementById('tomail');
 
 $form.addEventListener('submit', (event) => {
-    //console.log(event.target.value);
     event.preventDefault()
     const form = new FormData($form);
-   // console.log(form.get('name'));
-    //console.log(form.get('message'));
+
 
     let nombre = form.get('name');
     let mensaje = form.get('message');
@@ -20,6 +21,10 @@ $form.addEventListener('submit', (event) => {
     $link.click();
 
 });
+
+/**
+ *  Referencias a mis diferentes redes sociales
+ */
 
 const $iFace = document.getElementById('face-img');
 const $aFace = document.getElementById('face');
@@ -52,7 +57,52 @@ $iLinkedin.addEventListener('click', () => {
     $aLinkedin.click();
 });
 
+
+
+/**
+ *  Inicia lal ibreria AOS
+ */
+
 AOS.init( {
     duration: 1500
+});
+
+/**
+ *  Referencia a mi GitHub
+ */
+
+const $iPorta = document.getElementById('porta-id');
+const $aPorta = document.getElementById('porta-a');
+
+$iPorta.addEventListener('click', () => {
+    $aPorta.click();
+});
+
+
+/**
+ *  Referencias de la sección portafolio a mis trabajos realziados
+ */
+
+const $imgGradient = document.getElementById('img-gradient');
+const $aGradient = document.getElementById('a-gradient');
+
+$imgGradient.addEventListener('click', () => {
+    $aGradient.click();
+});
+
+
+const $imgGDicc = document.getElementById('img-dictionary');
+const $aDicc = document.getElementById('a-dictionary');
+
+$imgGDicc.addEventListener('click', () => {
+    $aDicc.click();
+});
+
+
+const $imgHidro = document.getElementById('img-hidro');
+const $aHidro = document.getElementById('a-hidro');
+
+$imgHidro.addEventListener('click', () => {
+    $aHidro.click();
 });
 

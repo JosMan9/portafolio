@@ -1,10 +1,10 @@
 footer {
 
-    background-color: #0D3441;
+    background-color: $footer-background-color;
 
     .contact-section {
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: $contact-section-margin-left;
+        margin-right: $contact-section-margin-right;
         position: relative;
 
         .text-contact {
@@ -17,15 +17,15 @@ footer {
 
             h1 {
                 color: white;
-                font-size: 70px;
-                margin-top: 30px;
-                margin-bottom: 25px;
+                font-size: $font-size-contact-h1;
+                margin-top: $margin-top-contact-h1;
+                margin-bottom: $margin-bottom-ontact-h1
 
             }
 
             p {
                 color: white;
-                font-size: 30px;
+                font-size: $font-size-contact-p;
             }
         }
 
@@ -33,28 +33,28 @@ footer {
             padding: 10px;
 
             form {
-                margin-left: 10px;
+                margin-left: $margin-left-contact-form;
                 width: 50%;
 
                 fieldset {
-                    padding-left: 10px;
-                    padding-bottom: 10px;
-                    padding-top: 10px;
-                    border-radius: 10px;
-                    border: 2px solid #0DE9C1;
+                    padding-left: $padding-left-contact-fieldset;
+                    padding-bottom: $padding-bottom-contact-fieldset;
+                    padding-top: $padding-top-contact-fieldset;
+                    border-radius: $border-radius-contact-fieldset;
+                    border: $border-contact-fieldset;
 
                     legend {
                         color: white;
-                        font-size: 35px;
+                        font-size: $font-size-legend;
                         text-align: center;
-                        padding-left: 15px;
-                        padding-right: 15px;
+                        padding-left: $padding-left-legend;
+                        padding-right: $padding-right-legend;
                     }
 
                     label {
                         color: white;
-                        font-size: 30px;
-                        margin: 15px;
+                        font-size: $font-size-label;
+                        margin: $margin-label;
                     }
 
                     input,
@@ -63,20 +63,20 @@ footer {
                     }
 
                     button {
-                        box-shadow: inset 18px 4px 18px 1px #1564ad;
-                        background-color: transparent;
-                        margin-left: 15px;
-                        border-radius: 33px;
-                        border: 4px solid #337bc4;
+                        box-shadow: $box-shadow-button-contact;
+                        background-color: $background-color-button-contact;
+                        margin-left: $margin-left-button-contact;
+                        border-radius: $border-radius-button-contact;
+                        border: $border-button-contact;
                         display: inline-block;
                         color: #ffffff;
-                        font-family: Times New Roman;
-                        font-size: 17px;
-                        font-weight: bold;
-                        font-style: italic;
-                        padding: 12px 46px;
+                        font-family: $font-family-button-contact;
+                        font-size: $font-size-button-contact;
+                        font-weight: $font-weight-button-contact;
+                        font-style: $font-style-button-contact;
+                        padding: $padding-button-contact;
                         text-decoration: none;
-                        text-shadow: 5px 2px 7px #528ecc;
+                        text-shadow: $text-shadow-button-contact;
                         cursor: pointer;
 
                         &:hover {

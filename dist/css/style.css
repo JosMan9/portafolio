@@ -318,16 +318,21 @@ header nav .menu .fa-linkedin:hover {
   color: #0147b7;
 }
 
+/* line 104, src/scss/partials/_menu.scss */
+header nav .menu .fa-regular {
+  color: #0147b7;
+}
+
 @media (min-width: 1000px) {
-  /* line 108, src/scss/partials/_menu.scss */
+  /* line 112, src/scss/partials/_menu.scss */
   nav {
     height: 100px !important;
   }
-  /* line 111, src/scss/partials/_menu.scss */
+  /* line 115, src/scss/partials/_menu.scss */
   nav .bar-btn {
     display: none;
   }
-  /* line 115, src/scss/partials/_menu.scss */
+  /* line 119, src/scss/partials/_menu.scss */
   nav .menu {
     position: relative !important;
     height: 100px !important;
@@ -337,23 +342,23 @@ header nav .menu .fa-linkedin:hover {
     margin-right: 50px !important;
     background: transparent !important;
   }
-  /* line 124, src/scss/partials/_menu.scss */
+  /* line 128, src/scss/partials/_menu.scss */
   nav .menu li {
     display: inline-block !important;
     line-height: 100px !important;
     margin: 0 20px !important;
     transition: none !important;
   }
-  /* line 130, src/scss/partials/_menu.scss */
+  /* line 134, src/scss/partials/_menu.scss */
   nav .menu li a {
     font-size: 20px !important;
   }
-  /* line 133, src/scss/partials/_menu.scss */
+  /* line 137, src/scss/partials/_menu.scss */
   nav .menu li a:hover {
     color: #0DE9C1;
     transition: 0.3s;
   }
-  /* line 137, src/scss/partials/_menu.scss */
+  /* line 141, src/scss/partials/_menu.scss */
   nav .menu li a span {
     margin-left: 10px;
   }
@@ -363,14 +368,10 @@ header nav .menu .fa-linkedin:hover {
 main {
   width: 90%;
   height: 90%;
-  /*background-color: $main-background-color;
-    border: $main-border;*/
   margin: auto;
-  /*box-shadow: $main-box-shadow;
-    border-radius: 10%;*/
 }
 
-/* line 10, src/scss/partials/_home.scss */
+/* line 6, src/scss/partials/_home.scss */
 main .item {
   padding: 1%;
   margin-top: 1em;
@@ -379,14 +380,14 @@ main .item {
   display: inline-block;
 }
 
-/* line 19, src/scss/partials/_home.scss */
+/* line 15, src/scss/partials/_home.scss */
 main #item-photo {
   width: 45%;
   float: left;
   margin-left: 1em;
 }
 
-/* line 24, src/scss/partials/_home.scss */
+/* line 20, src/scss/partials/_home.scss */
 main #item-photo img {
   width: 70%;
   height: 70%;
@@ -399,25 +400,15 @@ main #item-photo img {
   box-shadow: 1px 2px 20px #0DE9C1;
 }
 
-/* line 38, src/scss/partials/_home.scss */
+/* line 34, src/scss/partials/_home.scss */
 main #item-description {
   width: 45%;
   float: right;
   margin-right: 1em;
   text-align: center;
-  /*&::before {
-            content: '';
-            position: absolute;
-            width: 1px;
-            height: 42%;
-            padding-right: 1px;
-            @include calc(left, '50% - 1px');
-            @include calc(top, '20% - 1px');
-            background-color: $separation-background-color
-        }*/
 }
 
-/* line 55, src/scss/partials/_home.scss */
+/* line 40, src/scss/partials/_home.scss */
 main #item-description h1 {
   font-size: 300%;
   font-weight: 800;
@@ -425,7 +416,7 @@ main #item-description h1 {
   color: white;
 }
 
-/* line 62, src/scss/partials/_home.scss */
+/* line 47, src/scss/partials/_home.scss */
 main #item-description p {
   margin-top: 20px;
   font-size: 200%;
@@ -433,7 +424,7 @@ main #item-description p {
   color: wheat;
 }
 
-/* line 69, src/scss/partials/_home.scss */
+/* line 54, src/scss/partials/_home.scss */
 main #item-description .img {
   width: 50%;
   height: 40%;
@@ -443,27 +434,27 @@ main #item-description .img {
 }
 
 @media (max-width: 800px) {
-  /* line 83, src/scss/partials/_home.scss */
+  /* line 68, src/scss/partials/_home.scss */
   main {
     display: block;
   }
-  /* line 85, src/scss/partials/_home.scss */
+  /* line 70, src/scss/partials/_home.scss */
   main .item {
     display: block;
   }
-  /* line 89, src/scss/partials/_home.scss */
+  /* line 74, src/scss/partials/_home.scss */
   main #item-photo {
     width: 90% !important;
     align-items: center !important;
   }
-  /* line 93, src/scss/partials/_home.scss */
+  /* line 78, src/scss/partials/_home.scss */
   main #item-photo img {
     display: block !important;
     float: none !important;
     top: 10% !important;
     left: 10px !important;
   }
-  /* line 101, src/scss/partials/_home.scss */
+  /* line 86, src/scss/partials/_home.scss */
   main #item-description {
     position: relative !important;
     display: block !important;
@@ -475,13 +466,13 @@ main #item-description .img {
     text-align: center !important;
     bottom: 15% !important;
   }
-  /* line 113, src/scss/partials/_home.scss */
+  /* line 98, src/scss/partials/_home.scss */
   main #item-description p {
     font-size: 150% !important;
     display: block;
     float: none;
   }
-  /* line 119, src/scss/partials/_home.scss */
+  /* line 104, src/scss/partials/_home.scss */
   main #item-description .img {
     display: none !important;
     height: 10px !important;
@@ -493,27 +484,23 @@ main #item-description .img {
   width: 100%;
   height: 50%;
   margin-top: 100px;
-  /*background: url(/dist/img/fondo2.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;*/
 }
 
-/* line 11, src/scss/partials/_about.scss */
+/* line 7, src/scss/partials/_about.scss */
 .about-section .about-container {
   width: 100%;
   height: 100%;
   margin: 10px;
 }
 
-/* line 17, src/scss/partials/_about.scss */
+/* line 12, src/scss/partials/_about.scss */
 .about-section .about-container .about-photo {
   float: left;
   width: 50%;
   height: 100%;
 }
 
-/* line 22, src/scss/partials/_about.scss */
+/* line 17, src/scss/partials/_about.scss */
 .about-section .about-container .about-photo img {
   width: 50%;
   height: 70%;
@@ -525,14 +512,14 @@ main #item-description .img {
   box-shadow: 1px 2px 20px #0DE9C1;
 }
 
-/* line 37, src/scss/partials/_about.scss */
+/* line 32, src/scss/partials/_about.scss */
 .about-section .about-container .about-description {
   float: right;
   width: 50%;
   height: 100%;
 }
 
-/* line 42, src/scss/partials/_about.scss */
+/* line 37, src/scss/partials/_about.scss */
 .about-section .about-container .about-description h1 {
   text-align: center;
   margin: 15px;
@@ -544,7 +531,7 @@ main #item-description .img {
   color: white;
 }
 
-/* line 53, src/scss/partials/_about.scss */
+/* line 48, src/scss/partials/_about.scss */
 .about-section .about-container .about-description p {
   padding: 10px;
   text-align: center;
@@ -557,25 +544,25 @@ main #item-description .img {
 }
 
 @media (max-width: 800px) {
-  /* line 68, src/scss/partials/_about.scss */
+  /* line 63, src/scss/partials/_about.scss */
   .about-section {
     display: block !important;
   }
-  /* line 71, src/scss/partials/_about.scss */
+  /* line 66, src/scss/partials/_about.scss */
   .about-section .about-container .about-photo {
     display: block !important;
     float: none !important;
     width: 100% !important;
     align-items: center !important;
   }
-  /* line 77, src/scss/partials/_about.scss */
+  /* line 72, src/scss/partials/_about.scss */
   .about-section .about-container .about-photo img {
     display: block !important;
     float: none !important;
     top: 40% !important;
     left: -20px !important;
   }
-  /* line 85, src/scss/partials/_about.scss */
+  /* line 80, src/scss/partials/_about.scss */
   .about-section .about-container .about-description {
     position: relative !important;
     display: block !important;
@@ -587,7 +574,7 @@ main #item-description .img {
     text-align: center !important;
     bottom: 15% !important;
   }
-  /* line 96, src/scss/partials/_about.scss */
+  /* line 91, src/scss/partials/_about.scss */
   .about-section .about-container .about-description h1 {
     position: relative !important;
     top: 20% !important;
@@ -611,7 +598,6 @@ main #item-description .img {
 /* line 14, src/scss/partials/_skills.scss */
 .skills-section .skills-container .skill {
   display: inline-block;
-  /*border: 1px solid black;*/
   width: 250px;
   height: 10%;
   margin: 20px;
@@ -619,14 +605,14 @@ main #item-description .img {
   color: white;
 }
 
-/* line 23, src/scss/partials/_skills.scss */
+/* line 22, src/scss/partials/_skills.scss */
 .skills-section .skills-container .skill img {
   width: 30%;
   position: relative;
   left: 35%;
 }
 
-/* line 28, src/scss/partials/_skills.scss */
+/* line 27, src/scss/partials/_skills.scss */
 .skills-section .skills-container .skill img:hover ~ h2 {
   box-shadow: 1px 2px 20px #0DE9C1;
   border-radius: 10%;
@@ -634,27 +620,27 @@ main #item-description .img {
   display: none;
 }
 
-/* line 35, src/scss/partials/_skills.scss */
+/* line 34, src/scss/partials/_skills.scss */
 .skills-section .skills-container .skill img:hover {
   box-shadow: 1px 2px 20px #0DE9C1;
   border-radius: 10%;
   width: 50%;
 }
 
-/* line 42, src/scss/partials/_skills.scss */
+/* line 41, src/scss/partials/_skills.scss */
 .skills-section .skills-container .skill h2 {
   text-align: center;
   margin-top: 10px;
 }
 
 @media (max-width: 800px) {
-  /* line 51, src/scss/partials/_skills.scss */
+  /* line 50, src/scss/partials/_skills.scss */
   .skills-section {
     align-items: center !important;
     position: relative !important;
     margin: 0 auto !important;
   }
-  /* line 56, src/scss/partials/_skills.scss */
+  /* line 55, src/scss/partials/_skills.scss */
   .skills-section .skills-container {
     display: block !important;
     float: none !important;
@@ -665,7 +651,7 @@ main #item-description .img {
 }
 
 @media (max-width: 600px) {
-  /* line 69, src/scss/partials/_skills.scss */
+  /* line 68, src/scss/partials/_skills.scss */
   .skills-section .skills-container {
     display: block !important;
     float: none !important;
@@ -673,7 +659,7 @@ main #item-description .img {
     left: 25% !important;
     margin-left: 1px !important;
   }
-  /* line 76, src/scss/partials/_skills.scss */
+  /* line 75, src/scss/partials/_skills.scss */
   .skills-section .skills-container h1 {
     text-align: center;
     width: 250px;
@@ -693,42 +679,109 @@ main #item-description .img {
   display: inline-block;
 }
 
-/* line 11, src/scss/partials/_portofolio.scss */
+/* line 12, src/scss/partials/_portofolio.scss */
 .portofolio-section .portofolio-container .work1 img {
   width: 50%;
   margin: 25px;
   margin-left: 10%;
   border: 1px solid black;
+  -webkit-box-shadow: -21px -4px 8px -4px rgba(13, 233, 193, 0.52);
+  box-shadow: -21px -4px 8px -4px rgba(13, 233, 193, 0.52);
+  cursor: pointer;
 }
 
-/* line 18, src/scss/partials/_portofolio.scss */
+/* line 21, src/scss/partials/_portofolio.scss */
+.portofolio-section .portofolio-container .work1 img:hover {
+  opacity: 0.4;
+}
+
+/* line 26, src/scss/partials/_portofolio.scss */
 .portofolio-section .portofolio-container .work1 .work-description {
   width: 50rem;
   height: 7rem;
   padding: 5px;
-  background-color: #3F7856;
-  border-radius: 10px;
   float: right;
   right: 2%;
-  bottom: 200px;
+  bottom: 250px;
   position: relative;
 }
 
-/* line 29, src/scss/partials/_portofolio.scss */
+/* line 35, src/scss/partials/_portofolio.scss */
+.portofolio-section .portofolio-container .work1 .work-description h2 {
+  text-align: end;
+  padding-right: 35px;
+  color: white;
+  padding-bottom: 15px;
+}
+
+/* line 42, src/scss/partials/_portofolio.scss */
+.portofolio-section .portofolio-container .work1 .work-description p {
+  background-color: #3F7856;
+  border-radius: 10px;
+  padding: 20px;
+  -webkit-box-shadow: inset -26px 0px 22px -5px #0DE9C1;
+  box-shadow: inset -26px 0px 22px -5px #0DE9C1;
+}
+
+/* line 51, src/scss/partials/_portofolio.scss */
 .portofolio-section .portofolio-container .work1 .work-description .technologies {
   display: block;
   position: relative;
   float: right;
   padding-left: 50px;
+  color: white;
+  margin-top: 10px;
 }
 
-/* line 35, src/scss/partials/_portofolio.scss */
+/* line 59, src/scss/partials/_portofolio.scss */
 .portofolio-section .portofolio-container .work1 .work-description .technologies span {
   margin-left: 25px;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* line 70, src/scss/partials/_portofolio.scss */
+.portofolio-section .portofolio-container .other-projects {
+  background-color: transparent;
+  width: 40%;
+  height: 10%;
+  color: wheat;
+  align-items: center;
+  margin: 15px auto;
+  margin-bottom: 25px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px -1px 20px 5px #0DE9C1;
+  box-shadow: 0px -1px 20px 5px #0DE9C1;
+}
+
+/* line 84, src/scss/partials/_portofolio.scss */
+.portofolio-section .portofolio-container .other-projects h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* line 89, src/scss/partials/_portofolio.scss */
+.portofolio-section .portofolio-container .other-projects p {
+  padding: 10px;
+  font-size: 20px;
+}
+
+/* line 94, src/scss/partials/_portofolio.scss */
+.portofolio-section .portofolio-container .other-projects i {
+  padding: 15px;
+  cursor: pointer;
+}
+
+/* line 98, src/scss/partials/_portofolio.scss */
+.portofolio-section .portofolio-container .other-projects i:hover {
+  color: #0DE9C1;
 }
 
 @media (max-width: 800px) {
-  /* line 45, src/scss/partials/_portofolio.scss */
+  /* line 107, src/scss/partials/_portofolio.scss */
   .portofolio-section {
     align-items: center !important;
     position: relative !important;
@@ -736,19 +789,32 @@ main #item-description .img {
     display: block !important;
     float: none;
   }
-  /* line 51, src/scss/partials/_portofolio.scss */
+  /* line 114, src/scss/partials/_portofolio.scss */
   .portofolio-section .portofolio-container {
     position: relative;
     top: 500px !important;
   }
-  /* line 56, src/scss/partials/_portofolio.scss */
+  /* line 119, src/scss/partials/_portofolio.scss */
   .portofolio-section .portofolio-container .work1 img {
     width: 90% !important;
     left: 20% !important;
     margin-left: 25px;
     opacity: 0.4;
   }
-  /* line 63, src/scss/partials/_portofolio.scss */
+  /* line 125, src/scss/partials/_portofolio.scss */
+  .portofolio-section .portofolio-container .work1 img:hover {
+    opacity: 0.6;
+  }
+  /* line 130, src/scss/partials/_portofolio.scss */
+  .portofolio-section .portofolio-container .work1 img:hover ~ .work-description h2 {
+    color: whitesmoke;
+  }
+  /* line 134, src/scss/partials/_portofolio.scss */
+  .portofolio-section .portofolio-container .work1 img:hover ~ .work-description p {
+    color: black;
+    font-weight: bold;
+  }
+  /* line 142, src/scss/partials/_portofolio.scss */
   .portofolio-section .portofolio-container .work1 .work-description {
     width: 90% !important;
     right: 5% !important;
@@ -756,9 +822,24 @@ main #item-description .img {
     color: white;
     text-align: center;
   }
-  /* line 71, src/scss/partials/_portofolio.scss */
+  /* line 149, src/scss/partials/_portofolio.scss */
+  .portofolio-section .portofolio-container .work1 .work-description p {
+    background-color: transparent !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-align: center;
+  }
+  /* line 156, src/scss/partials/_portofolio.scss */
+  .portofolio-section .portofolio-container .work1 .work-description h2 {
+    text-align: center;
+  }
+  /* line 161, src/scss/partials/_portofolio.scss */
   .portofolio-section .portofolio-container .work1 .technologies {
     display: none !important;
+  }
+  /* line 166, src/scss/partials/_portofolio.scss */
+  .portofolio-section .portofolio-container .other-projects {
+    background-color: transparent !important;
   }
 }
 
@@ -862,7 +943,7 @@ footer .contact-section .contact-container form fieldset button {
   font-style: italic;
   padding: 12px 46px;
   text-decoration: none;
-  text-shadow: 5px 2px 7px #528ecc;
+  text-shadow: 20px 6px 7px #528ecc;
   cursor: pointer;
 }
 
@@ -928,38 +1009,12 @@ html {
 /* line 19, src/scss/style.scss */
 body {
   position: relative;
-  /*background: linear-gradient(15deg, #4E79B8, #8CA5CB, #C5D0E1);*/
   background-color: #1A4A5A;
-  /*animation: change 1s ease-in-out infinite;*/
 }
 
-/* line 26, src/scss/style.scss */
+/* line 24, src/scss/style.scss */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-/* line 32, src/scss/style.scss */
-.cuadrado {
-  border: 3px solid red;
-  margin-top: 10px;
-}
-
-@keyframes change {
-  0% {
-    background: linear-gradient(30deg, #8CA5CB, #4E79B8, #C5D0E1);
-  }
-  50% {
-    background: linear-gradient(60deg, #8CA5CB, #4E79B8, #C5D0E1);
-  }
-  100% {
-    background: linear-gradient(90deg, #8CA5CB, #4E79B8, #C5D0E1);
-  }
-}
-
-/* line 53, src/scss/style.scss */
-aside {
-  position: sticky;
-  position: -webkit-sticky;
 }
